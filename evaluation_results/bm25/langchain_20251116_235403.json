@@ -1,0 +1,168 @@
+{
+  "config": {
+    "retriever": "bm25",
+    "generator": "langchain",
+    "model": "models/finetuned-qwen-3b",
+    "use_fewshot": true,
+    "num_examples": 3,
+    "top_k": 10
+  },
+  "metrics": {
+    "exact_match": 0.0,
+    "ndcg@10": 66.66666666666666,
+    "num_queries": 3,
+    "total_time": 20.470733404159546
+  },
+  "per_query_results": [
+    {
+      "id": "5ae3f9c45542995ad6573cfe",
+      "question": "The second place finisher of the 2011 Gran Premio Santander d'Italia drove for who when he won the 2009 FIA Formula One World Championship?",
+      "predicted_answer": "TRAINING EXAMPLES:",
+      "ground_truth_answer": "Brawn GP",
+      "exact_match": 0,
+      "ndcg@10": 0.38685280723454163,
+      "retrieved_docs": [
+        [
+          "doc-45965",
+          49.09095507889252
+        ],
+        [
+          "doc-23954",
+          46.73331911281806
+        ],
+        [
+          "doc-43480",
+          38.219515638013085
+        ],
+        [
+          "doc-43038",
+          37.36483576117537
+        ],
+        [
+          "doc-45341",
+          34.56638405987466
+        ],
+        [
+          "doc-119898",
+          34.00465883709025
+        ],
+        [
+          "doc-30900",
+          32.12034284290574
+        ],
+        [
+          "doc-90926",
+          32.12034284290574
+        ],
+        [
+          "doc-38993",
+          32.12034284290574
+        ],
+        [
+          "doc-95179",
+          31.66126070228429
+        ]
+      ]
+    },
+    {
+      "id": "5ac1773f5542994ab5c67d52",
+      "question": "Geoff Peterson is an animatronic human skeleton that served as the sidekick on the late-night talk show \"The Late Late Show with Craig Ferguson\", often referred to as a \"robot skeleton\", Peterson is a radio-controlled robot puppet, are animatronics refers to the use of robotic devices to emulate a human or an animal, or bring lifelike characteristics to an otherwise inanimate object, was designed and built by who, of \"MythBusters\"?",
+      "predicted_answer": "TRAINING EXAMPLES:",
+      "ground_truth_answer": "Grant Imahara",
+      "exact_match": 0,
+      "ndcg@10": 1.0,
+      "retrieved_docs": [
+        [
+          "doc-129052",
+          122.95676208459639
+        ],
+        [
+          "doc-96349",
+          110.7580425293376
+        ],
+        [
+          "doc-28953",
+          66.34374151242233
+        ],
+        [
+          "doc-11024",
+          43.20936482315509
+        ],
+        [
+          "doc-95591",
+          43.08977794321469
+        ],
+        [
+          "doc-44493",
+          39.780113884132604
+        ],
+        [
+          "doc-7913",
+          33.638023878611136
+        ],
+        [
+          "doc-43796",
+          31.40027778714163
+        ],
+        [
+          "doc-106021",
+          31.26196009888352
+        ],
+        [
+          "doc-71209",
+          31.016587420053533
+        ]
+      ]
+    },
+    {
+      "id": "5ae315dd5542990afbd1e0ab",
+      "question": "Who was a part of the Paris postwar literary movement in the 1950s, Terry Southern or Winston Churchill?",
+      "predicted_answer": "TRAINING EXAMPLES:",
+      "ground_truth_answer": "Terry Southern",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-20654",
+          41.17536811557829
+        ],
+        [
+          "doc-122944",
+          23.31383071765237
+        ],
+        [
+          "doc-7029",
+          16.65972809999575
+        ],
+        [
+          "doc-44100",
+          15.358596465031757
+        ],
+        [
+          "doc-58196",
+          15.188647870107305
+        ],
+        [
+          "doc-61347",
+          15.091815041784804
+        ],
+        [
+          "doc-20848",
+          14.56033128923826
+        ],
+        [
+          "doc-79358",
+          14.56033128923826
+        ],
+        [
+          "doc-90793",
+          14.4407752071737
+        ],
+        [
+          "doc-83581",
+          14.413305611578664
+        ]
+      ]
+    }
+  ]
+}

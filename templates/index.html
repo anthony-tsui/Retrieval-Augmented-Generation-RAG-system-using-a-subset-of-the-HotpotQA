@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG System - Multi-Turn & Agentic Workflow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .mode-selector {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .mode-option {
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+            padding: 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .mode-option:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .mode-option input[type="radio"] {
+            display: none;
+        }
+
+        .mode-option input[type="radio"]:checked + span {
+            color: #fff;
+        }
+
+        .mode-option input[type="radio"]:checked ~ * {
+            color: #fff !important;
+        }
+
+        .mode-option input[type="radio"]:checked + span + .mode-description {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .mode-option input[type="radio"]:checked ~ .mode-option {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-color: #667eea;
+        }
+
+        .mode-option span {
+            display: block;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+
+        .mode-description {
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .mode-option:has(input:checked) {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-color: #667eea;
+        }
+
+        .mode-option:has(input:checked) span,
+        .mode-option:has(input:checked) .mode-description {
+            color: #fff;
+        }
+
+        .clear-history-btn {
+            display: block;
+            margin: 0 auto 20px;
+            padding: 12px 30px;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+
+        .clear-history-btn:hover {
+            background: #ee5a52;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,107,107,0.3);
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            font-family: inherit;
+            resize: vertical;
+            transition: border-color 0.3s;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .results {
+            margin-top: 30px;
+        }
+
+        .answer-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 20px;
+        }
+
+        .answer-box h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .docs-list {
+            margin-top: 20px;
+        }
+
+        .doc-item {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .doc-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .doc-score {
+            color: #667eea;
+        }
+
+        .reasoning-steps {
+            margin-top: 20px;
+        }
+
+        .step {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border-left: 3px solid #667eea;
+        }
+
+        .step-title {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+
+        .sub-question {
+            background: #f8f9fa;
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-size: 0.95em;
+        }
+
+        .error {
+            background: #fee;
+            color: #c00;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 RAG System</h1>
+        <p class="subtitle">Retrieval-Augmented Generation with Multi-Turn & Agentic Workflow</p>
+
+        <div class="mode-selector">
+            <label class="mode-option">
+                <input type="radio" name="mode" value="basic" checked>
+                <span>⚡ Basic RAG</span>
+                <div class="mode-description">Simple Q&A without conversation memory. Fast and straightforward.</div>
+            </label>
+            
+            <label class="mode-option">
+                <input type="radio" name="mode" value="multiturn">
+                <span>🔄 MultiTurn RAG</span>
+                <div class="mode-description">Conversation with memory & context. Resolves pronouns and references.</div>
+            </label>
+            
+            <label class="mode-option">
+                <input type="radio" name="mode" value="agentic">
+                <span>🧠 Agentic Workflow</span>
+                <div class="mode-description">Multi-step reasoning with query decomposition and verification.</div>
+            </label>
+        </div>
+
+        <button class="clear-history-btn" onclick="clearHistory()">🗑️ Clear Conversation History</button>
+
+        <h2>💬 Ask Your Question</h2>
+        <textarea id="question" placeholder="Enter your question here..."></textarea>
+        <button onclick="submitQuery()">🔍 Ask</button>
+
+        <div class="loading" id="loading">⏳ Processing your query...</div>
+
+        <div class="results" id="results" style="display:none;">
+            <div class="answer-box">
+                <h3>💡 Answer</h3>
+                <div id="answer"></div>
+            </div>
+
+            <div class="reasoning-steps" id="reasoning" style="display:none;">
+                <h3>🧠 Reasoning Process</h3>
+                <div id="reasoningSteps"></div>
+            </div>
+
+            <div class="docs-list">
+                <h3>📚 Retrieved Documents</h3>
+                <div id="docs"></div>
+            </div>
+        </div>
+
+        <div class="error" id="error" style="display:none;"></div>
+    </div>
+
+    <script>
+        async function submitQuery() {
+            const question = document.getElementById('question').value.trim();
+            if (!question) {
+                alert('Please enter a question');
+                return;
+            }
+
+            const mode = document.querySelector('input[name="mode"]:checked').value;
+
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+            document.getElementById('error').style.display = 'none';
+
+            try {
+                const response = await fetch('/query', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ question, mode })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    displayResults(data);
+                } else {
+                    displayError(data.error || 'An error occurred');
+                }
+            } catch (error) {
+                displayError('Error: ' + error.message);
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+            }
+        }
+
+        function displayResults(data) {
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('answer').textContent = data.answer;
+
+            // Display reasoning steps if available
+            if (data.reasoning_steps && data.reasoning_steps.length > 0) {
+                const reasoningDiv = document.getElementById('reasoning');
+                const stepsDiv = document.getElementById('reasoningSteps');
+                reasoningDiv.style.display = 'block';
+                stepsDiv.innerHTML = '';
+
+                data.reasoning_steps.forEach((step, idx) => {
+                    let stepHtml = '<div class="step">';
+                    let stepTitle = step.step || step.action || '';
+                    let stepTooltip = '';
+                    
+                    // Add explanatory tooltips for each step type
+                    if (stepTitle.includes('Decomposition') || stepTitle.includes('Query Analysis')) {
+                        stepTooltip = '🔍 Breaking down complex questions into simpler sub-questions';
+                    } else if (stepTitle.includes('Retrieval')) {
+                        stepTooltip = '📚 Retrieving relevant documents from the knowledge base';
+                    } else if (stepTitle.includes('Synthesis')) {
+                        stepTooltip = '⚙️ Combining evidence from multiple documents to generate answer';
+                    } else if (stepTitle.includes('Verification')) {
+                        stepTooltip = '✓ Checking if the answer is supported by retrieved evidence';
+                    } else if (stepTitle.includes('Reflection')) {
+                        stepTooltip = '💭 Meta-reasoning: Evaluating the quality of the reasoning process';
+                    } else if (stepTitle.includes('Reformulation')) {
+                        stepTooltip = '🔄 Converting follow-up questions to self-contained queries';
+                    }
+                    
+                    stepHtml += `<div class="step-title" title="${stepTooltip}">Step ${idx + 1}: ${stepTitle}`;
+                    if (stepTooltip) {
+                        stepHtml += ` <span style="color: #999; font-size: 0.85em;">(${stepTooltip})</span>`;
+                    }
+                    stepHtml += `</div>`;
+
+                    if (step.sub_queries) {
+                        stepHtml += '<div><strong>Sub-questions:</strong></div>';
+                        step.sub_queries.forEach(sq => {
+                            stepHtml += `<div class="sub-question">${sq}</div>`;
+                        });
+                    }
+
+                    if (step.original_query && step.reformulated_query) {
+                        stepHtml += `<div><strong>Original:</strong> ${step.original_query}</div>`;
+                        stepHtml += `<div><strong>Reformulated:</strong> ${step.reformulated_query}</div>`;
+                    }
+
+                    if (step.answer) {
+                        stepHtml += `<div><strong>Answer:</strong> ${step.answer}</div>`;
+                    }
+
+                    // Enhanced verification display with explanation
+                    if (step.is_supported !== undefined) {
+                        const verificationIcon = step.is_supported ? '✓' : '✗';
+                        const verificationStatus = step.is_supported ? 'Supported' : 'Not supported';
+                        const verificationColor = step.is_supported ? '#28a745' : '#dc3545';
+                        
+                        stepHtml += `<div style="margin-top: 10px; padding: 10px; background: #f8f9fa; border-radius: 5px;">`;
+                        stepHtml += `<strong style="color: ${verificationColor};">Verification: ${verificationIcon} ${verificationStatus}</strong>`;
+                        stepHtml += `<div style="font-size: 0.9em; color: #666; margin-top: 5px;">`;
+                        stepHtml += `This step checks if the generated answer is supported by the retrieved documents. `;
+                        stepHtml += step.is_supported ? 
+                            `The answer is grounded in the evidence from the documents.` : 
+                            `The answer could not be verified against the documents.`;
+                        stepHtml += `</div>`;
+                        
+                        if (step.explanation) {
+                            stepHtml += `<div style="font-size: 0.85em; color: #555; margin-top: 5px;">`;
+                            stepHtml += `<em>${step.explanation}</em>`;
+                            stepHtml += `</div>`;
+                        }
+                        stepHtml += `</div>`;
+                    }
+
+                    // Enhanced confidence/reflection display with explanation
+                    if (step.confidence) {
+                        const confidenceLevel = step.confidence.toLowerCase();
+                        let confidenceColor = '#6c757d';
+                        let confidenceIcon = '💭';
+                        
+                        if (confidenceLevel.includes('high')) {
+                            confidenceColor = '#28a745';
+                            confidenceIcon = '✨';
+                        } else if (confidenceLevel.includes('medium')) {
+                            confidenceColor = '#ffc107';
+                            confidenceIcon = '⚠️';
+                        } else if (confidenceLevel.includes('low')) {
+                            confidenceColor = '#dc3545';
+                            confidenceIcon = '❓';
+                        }
+                        
+                        stepHtml += `<div style="margin-top: 10px; padding: 10px; background: #f8f9fa; border-radius: 5px;">`;
+                        stepHtml += `<strong style="color: ${confidenceColor};">${confidenceIcon} Confidence: ${step.confidence}</strong>`;
+                        stepHtml += `<div style="font-size: 0.9em; color: #666; margin-top: 5px;">`;
+                        stepHtml += `This step reflects on the reasoning process and assigns a confidence level. `;
+                        
+                        if (confidenceLevel.includes('high')) {
+                            stepHtml += `The system is highly confident in this answer based on strong evidence and successful verification.`;
+                        } else if (confidenceLevel.includes('medium')) {
+                            stepHtml += `The system has moderate confidence - the answer is reasonable but may have some uncertainty.`;
+                        } else {
+                            stepHtml += `The system has low confidence - the answer may not be reliable or well-supported.`;
+                        }
+                        stepHtml += `</div>`;
+                        stepHtml += `</div>`;
+                    }
+                    
+                    // Add general explanation for reflection step
+                    if (step.step && (step.step.includes('Reflection') || step.step.includes('5.'))) {
+                        if (!step.confidence) {
+                            stepHtml += `<div style="margin-top: 10px; padding: 10px; background: #e3f2fd; border-radius: 5px;">`;
+                            stepHtml += `<div style="font-size: 0.9em; color: #1976d2;">`;
+                            stepHtml += `<strong>About Reflection:</strong> This meta-reasoning step reviews the entire process - `;
+                            stepHtml += `from query decomposition, through retrieval and synthesis, to verification. `;
+                            stepHtml += `It helps the system evaluate its own reasoning quality.`;
+                            stepHtml += `</div>`;
+                            stepHtml += `</div>`;
+                        }
+                    }
+
+                    stepHtml += '</div>';
+                    stepsDiv.innerHTML += stepHtml;
+                });
+            } else {
+                document.getElementById('reasoning').style.display = 'none';
+            }
+
+            // Display retrieved documents
+            const docsDiv = document.getElementById('docs');
+            docsDiv.innerHTML = '';
+
+            if (data.retrieved_docs) {
+                data.retrieved_docs.forEach(doc => {
+                    const docDiv = document.createElement('div');
+                    docDiv.className = 'doc-item';
+                    docDiv.innerHTML = `
+                        <div class="doc-header">
+                            <span>📄 Rank ${doc.rank} - ${doc.doc_id}</span>
+                            <span class="doc-score">Score: ${doc.score}</span>
+                        </div>
+                        <div>${doc.text}</div>
+                    `;
+                    docsDiv.appendChild(docDiv);
+                });
+            }
+        }
+
+        function displayError(message) {
+            const errorDiv = document.getElementById('error');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+        }
+
+        async function clearHistory() {
+            try {
+                const response = await fetch('/clear_history', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                const data = await response.json();
+                alert(data.message);
+            } catch (error) {
+                alert('Error clearing history: ' + error.message);
+            }
+        }
+
+        // Allow Enter key to submit
+        document.getElementById('question').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                submitQuery();
+            }
+        });
+    </script>
+</body>
+</html>

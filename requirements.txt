@@ -1,0 +1,114 @@
+# ============================================================================
+# INSTALLATION INSTRUCTIONS
+# ============================================================================
+# 
+# Required Python Version: 3.11.12
+# 
+# Step 1: Create virtual environment
+#   python -m venv .venv
+# 
+# Step 2: Activate virtual environment
+#   Windows:    .venv\Scripts\activate
+#   Linux/Mac:  source .venv/bin/activate
+# 
+# Step 3: Install PyTorch first (before other dependencies)
+#   For CUDA GPU support (recommended):
+#     pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+#   
+#   For CPU-only:
+#     pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+# 
+# Step 4: Install remaining dependencies
+#   pip install -r requirements.txt
+# 
+# Step 5: Download NLTK data (required)
+#   python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk.download('wordnet')"
+# 
+# ============================================================================
+# NOTES
+# ============================================================================
+# - Install PyTorch FIRST before other packages to ensure correct CUDA version
+# - bitsandbytes requires CUDA; skip for CPU-only installations
+# - For GPU: Ensure CUDA 12.1 or compatible version is installed
+# - faiss-cpu can be replaced with faiss-gpu for GPU acceleration
+# - All retrievers (BM25, Dense, E5, Word2Vec, ColBERT) are included
+# - All generators (BasicRAG, MultiTurnRAG, AgenticRAG) use LangChain/LangGraph
+# - Fine-tuning (finetune_qwen.py) uses LoRA with 8-bit quantization
+# - Evaluation (evaluate.py), inference (main.py), and web UI (web_ui.py) included
+# ============================================================================
+
+# ============================================================================
+# DEEP LEARNING & TRANSFORMERS
+# ============================================================================
+# NOTE: Install PyTorch separately first (see instructions above)
+# torch==2.5.1  # Install separately with CUDA/CPU flag
+transformers==4.47.1  # Transformer models (ColBERT, E5, all generators)
+accelerate==1.2.1  # Model acceleration
+peft==0.14.0  # Parameter-efficient fine-tuning (LoRA for finetune_qwen.py)
+bitsandbytes==0.45.0  # 8-bit optimizers (GPU only, used in finetune_qwen.py)
+safetensors==0.4.5  # Safe tensor serialization
+
+# ============================================================================
+# LANGCHAIN & LANGGRAPH (Required for ALL generators)
+# ============================================================================
+langchain==0.3.13  # LangChain framework (BasicRAG, MultiTurnRAG, AgenticRAG)
+langchain-core==0.3.28  # LangChain core (prompts, messages, base classes)
+langchain-community==0.3.13  # LangChain community integrations
+langgraph==0.2.59  # LangGraph state graphs (MultiTurnRAG, AgenticRAG workflows)
+langchain-huggingface==0.1.2  # HuggingFace pipeline integration (all generators)
+langsmith==0.2.5  # LangSmith for tracing and debugging
+
+# ============================================================================
+# EMBEDDINGS & RETRIEVAL
+# ============================================================================
+sentence-transformers==3.3.1  # Sentence embedding models (Dense, E5, ColBERT retrievers)
+rank-bm25==0.2.2  # BM25 ranking algorithm (BM25 retriever)
+faiss-cpu==1.9.0.post1  # Vector similarity search (E5 retriever)
+gensim==4.3.3  # Word2Vec and topic modeling (Word2Vec retriever)
+
+# ============================================================================
+# NLP UTILITIES
+# ============================================================================
+nltk==3.9.1  # Natural Language Toolkit (all retrievers use this)
+
+# ============================================================================
+# WEB FRAMEWORK (Flask UI for web_ui.py)
+# ============================================================================
+Flask==3.1.0  # Web framework for web UI
+Werkzeug==3.1.3  # WSGI utilities for Flask
+Jinja2==3.1.4  # Template engine for Flask
+MarkupSafe==3.0.2  # Safe string handling for templates
+
+# ============================================================================
+# DATA PROCESSING & ML
+# ============================================================================
+numpy==1.26.4  # Numerical computing (all retrievers, evaluate.py)
+pandas==2.2.3  # Data manipulation
+scikit-learn==1.5.2  # Machine learning utilities (Dense, E5, Word2Vec, answer_validator.py)
+datasets==3.2.0  # HuggingFace datasets (finetune_qwen.py)
+
+# ============================================================================
+# UTILITIES
+# ============================================================================
+tqdm==4.67.1  # Progress bars (evaluate.py, finetune_qwen.py)
+requests==2.32.5  # HTTP library
+filelock==3.20.0  # File locking
+fsspec==2024.10.0  # Filesystem spec
+huggingface-hub==0.27.0  # HuggingFace Hub client
+tokenizers==0.21.0  # Fast tokenizers
+regex==2024.11.6  # Regular expressions
+PyYAML==6.0.2  # YAML parser
+packaging==24.2  # Package version utilities
+
+# ============================================================================
+# QUICK INSTALL COMMAND
+# ============================================================================
+# Complete installation (GPU with CUDA 12.1):
+#   pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+#   pip install -r requirements.txt
+#   python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk.download('wordnet')"
+#
+# Complete installation (CPU only):
+#   pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements.txt
+#   python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk.download('wordnet')"

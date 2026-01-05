@@ -1,0 +1,518 @@
+{
+  "config": {
+    "retriever": "bm25",
+    "generator": "langchain",
+    "model": "models/finetuned-qwen-3b",
+    "use_fewshot": true,
+    "num_examples": 3,
+    "top_k": 10
+  },
+  "metrics": {
+    "exact_match": 0.0,
+    "ndcg@10": 62.35088301898587,
+    "num_queries": 10,
+    "total_time": 11.519553422927856
+  },
+  "per_query_results": [
+    {
+      "id": "5ae3f9c45542995ad6573cfe",
+      "question": "The second place finisher of the 2011 Gran Premio Santander d'Italia drove for who when he won the 2009 FIA Formula One World Championship?",
+      "predicted_answer": "You are an expert question-answering system trained on HotpotQA.",
+      "ground_truth_answer": "Brawn GP",
+      "exact_match": 0,
+      "ndcg@10": 0.38685280723454163,
+      "retrieved_docs": [
+        [
+          "doc-45965",
+          49.09095507889252
+        ],
+        [
+          "doc-23954",
+          46.73331911281806
+        ],
+        [
+          "doc-43480",
+          38.219515638013085
+        ],
+        [
+          "doc-43038",
+          37.36483576117537
+        ],
+        [
+          "doc-45341",
+          34.56638405987466
+        ],
+        [
+          "doc-119898",
+          34.00465883709025
+        ],
+        [
+          "doc-30900",
+          32.12034284290574
+        ],
+        [
+          "doc-90926",
+          32.12034284290574
+        ],
+        [
+          "doc-38993",
+          32.12034284290574
+        ],
+        [
+          "doc-95179",
+          31.66126070228429
+        ]
+      ]
+    },
+    {
+      "id": "5ac1773f5542994ab5c67d52",
+      "question": "Geoff Peterson is an animatronic human skeleton that served as the sidekick on the late-night talk show \"The Late Late Show with Craig Ferguson\", often referred to as a \"robot skeleton\", Peterson is a radio-controlled robot puppet, are animatronics refers to the use of robotic devices to emulate a human or an animal, or bring lifelike characteristics to an otherwise inanimate object, was designed and built by who, of \"MythBusters\"?",
+      "predicted_answer": "You are an expert question-answering system trained on HotpotQA.",
+      "ground_truth_answer": "Grant Imahara",
+      "exact_match": 0,
+      "ndcg@10": 1.0,
+      "retrieved_docs": [
+        [
+          "doc-129052",
+          122.95676208459639
+        ],
+        [
+          "doc-96349",
+          110.7580425293376
+        ],
+        [
+          "doc-28953",
+          66.34374151242233
+        ],
+        [
+          "doc-11024",
+          43.20936482315509
+        ],
+        [
+          "doc-95591",
+          43.08977794321469
+        ],
+        [
+          "doc-44493",
+          39.780113884132604
+        ],
+        [
+          "doc-7913",
+          33.638023878611136
+        ],
+        [
+          "doc-43796",
+          31.40027778714163
+        ],
+        [
+          "doc-106021",
+          31.26196009888352
+        ],
+        [
+          "doc-71209",
+          31.016587420053533
+        ]
+      ]
+    },
+    {
+      "id": "5ae315dd5542990afbd1e0ab",
+      "question": "Who was a part of the Paris postwar literary movement in the 1950s, Terry Southern or Winston Churchill?",
+      "predicted_answer": "You are an expert question-answering system trained on HotpotQA.",
+      "ground_truth_answer": "Terry Southern",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-20654",
+          41.17536811557829
+        ],
+        [
+          "doc-122944",
+          23.31383071765237
+        ],
+        [
+          "doc-7029",
+          16.65972809999575
+        ],
+        [
+          "doc-44100",
+          15.358596465031757
+        ],
+        [
+          "doc-58196",
+          15.188647870107305
+        ],
+        [
+          "doc-61347",
+          15.091815041784804
+        ],
+        [
+          "doc-20848",
+          14.56033128923826
+        ],
+        [
+          "doc-79358",
+          14.56033128923826
+        ],
+        [
+          "doc-90793",
+          14.4407752071737
+        ],
+        [
+          "doc-83581",
+          14.413305611578664
+        ]
+      ]
+    },
+    {
+      "id": "5ae1d5ac5542997f29b3c145",
+      "question": "Who performed a song written by Verse Simmons that features the story of a fugitive who has shot a man?",
+      "predicted_answer": "You are an expert question-answering system trained on HotpotQA.",
+      "ground_truth_answer": "Rihanna",
+      "exact_match": 0,
+      "ndcg@10": 0.0,
+      "retrieved_docs": [
+        [
+          "doc-34000",
+          22.743242679569047
+        ],
+        [
+          "doc-85989",
+          19.5856359111716
+        ],
+        [
+          "doc-38611",
+          19.53154550706284
+        ],
+        [
+          "doc-13941",
+          19.50304545532694
+        ],
+        [
+          "doc-116985",
+          19.42971288232976
+        ],
+        [
+          "doc-23769",
+          18.931595153819508
+        ],
+        [
+          "doc-68510",
+          18.764869873809456
+        ],
+        [
+          "doc-113670",
+          18.73074150103881
+        ],
+        [
+          "doc-94622",
+          18.73074150103881
+        ],
+        [
+          "doc-30789",
+          18.73074150103881
+        ]
+      ]
+    },
+    {
+      "id": "5a77251055429966f1a36ca5",
+      "question": "Which is currently more valuable, Temagami-Lorrain Mine or Meadowbank Gold Mine?",
+      "predicted_answer": "You are an expert question-answering system trained on HotpotQA.",
+      "ground_truth_answer": "Meadowbank Gold Mine",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-130898",
+          39.34376449789696
+        ],
+        [
+          "doc-142444",
+          39.34376449789696
+        ],
+        [
+          "doc-111624",
+          28.212270463847187
+        ],
+        [
+          "doc-134578",
+          28.212270463847187
+        ],
+        [
+          "doc-21448",
+          20.847118771235245
+        ],
+        [
+          "doc-115257",
+          20.721415772620666
+        ],
+        [
+          "doc-76888",
+          20.721415772620666
+        ],
+        [
+          "doc-116836",
+          20.721415772620666
+        ],
+        [
+          "doc-77331",
+          20.721415772620666
+        ],
+        [
+          "doc-82960",
+          20.713619678401734
+        ]
+      ]
+    },
+    {
+      "id": "5ae3fc935542992f92d823aa",
+      "question": "Are Peter Bjorn and John and KMFDM both Swedish bands?",
+      "predicted_answer": "You are an expert question-answering system trained on HotpotQA.",
+      "ground_truth_answer": "no",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-133467",
+          31.349961652285124
+        ],
+        [
+          "doc-21655",
+          27.476642210020373
+        ],
+        [
+          "doc-121391",
+          24.94131785956798
+        ],
+        [
+          "doc-38727",
+          22.258758011167643
+        ],
+        [
+          "doc-123909",
+          22.258758011167643
+        ],
+        [
+          "doc-62516",
+          21.699905366753804
+        ],
+        [
+          "doc-20920",
+          21.55793799466027
+        ],
+        [
+          "doc-37941",
+          19.687443187876664
+        ],
+        [
+          "doc-76719",
+          18.500785944331984
+        ],
+        [
+          "doc-27798",
+          18.26930391150511
+        ]
+      ]
+    },
+    {
+      "id": "5a7384f0554299623ed4abce",
+      "question": "Lakshmi Niwas Mittal is the CEO of what Luxembourg-based multinational steel manufacturing corporation?",
+      "predicted_answer": "You are an expert question-answering system trained on HotpotQA.",
+      "ground_truth_answer": "ArcelorMittal",
+      "exact_match": 0,
+      "ndcg@10": 1.0,
+      "retrieved_docs": [
+        [
+          "doc-118357",
+          58.60671518018912
+        ],
+        [
+          "doc-116820",
+          35.54107232650198
+        ],
+        [
+          "doc-30317",
+          29.249546292611114
+        ],
+        [
+          "doc-108990",
+          27.015853488883607
+        ],
+        [
+          "doc-132957",
+          26.464658641258126
+        ],
+        [
+          "doc-21022",
+          23.734745297051564
+        ],
+        [
+          "doc-127637",
+          23.734745297051564
+        ],
+        [
+          "doc-48300",
+          20.32393151789922
+        ],
+        [
+          "doc-141217",
+          18.10051723252848
+        ],
+        [
+          "doc-77085",
+          16.884896748633416
+        ]
+      ]
+    },
+    {
+      "id": "5a8c82c4554299653c1aa09f",
+      "question": "Are Deryck Whibley and Sandeul from the same country?",
+      "predicted_answer": "You are an expert question-answering system trained on HotpotQA.",
+      "ground_truth_answer": "no",
+      "exact_match": 0,
+      "ndcg@10": 0.6052602440527057,
+      "retrieved_docs": [
+        [
+          "doc-108826",
+          35.684138054049185
+        ],
+        [
+          "doc-89854",
+          31.83167228347351
+        ],
+        [
+          "doc-62249",
+          25.614291403616438
+        ],
+        [
+          "doc-89238",
+          24.054740379409388
+        ],
+        [
+          "doc-22375",
+          17.706718857655197
+        ],
+        [
+          "doc-14928",
+          14.903017356121785
+        ],
+        [
+          "doc-123994",
+          11.42765608476531
+        ],
+        [
+          "doc-99315",
+          11.42765608476531
+        ],
+        [
+          "doc-43278",
+          11.42765608476531
+        ],
+        [
+          "doc-39357",
+          11.42765608476531
+        ]
+      ]
+    },
+    {
+      "id": "5ab37aae55429969a97a8159",
+      "question": "The father of Beorhtnoð æthling of Kent ruled Mercia between what years ?",
+      "predicted_answer": "You are an expert question-answering system trained on HotpotQA.",
+      "ground_truth_answer": "852 to 874",
+      "exact_match": 0,
+      "ndcg@10": 0.7903864795495061,
+      "retrieved_docs": [
+        [
+          "doc-54684",
+          56.679641645211106
+        ],
+        [
+          "doc-10785",
+          47.62102626098165
+        ],
+        [
+          "doc-111671",
+          21.17658306748224
+        ],
+        [
+          "doc-113203",
+          19.039153252946225
+        ],
+        [
+          "doc-144619",
+          18.349281665075022
+        ],
+        [
+          "doc-97763",
+          16.39992232033595
+        ],
+        [
+          "doc-97325",
+          16.36630965265696
+        ],
+        [
+          "doc-35557",
+          16.221977598466353
+        ],
+        [
+          "doc-79787",
+          15.307210436325532
+        ],
+        [
+          "doc-34871",
+          15.266562510876035
+        ]
+      ]
+    },
+    {
+      "id": "5ade23b35542992fa25da6dd",
+      "question": "The Rieder Automatic Rifle was a model made by the company that created firearms for the forces of what country?",
+      "predicted_answer": "You are an expert question-answering system trained on HotpotQA.",
+      "ground_truth_answer": "British Empire and Commonwealth",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-16411",
+          44.644661272144745
+        ],
+        [
+          "doc-99914",
+          35.14084373961617
+        ],
+        [
+          "doc-31003",
+          31.694730746322644
+        ],
+        [
+          "doc-8456",
+          31.534450114474218
+        ],
+        [
+          "doc-76065",
+          24.623655465511625
+        ],
+        [
+          "doc-45431",
+          24.44271617442149
+        ],
+        [
+          "doc-67127",
+          24.223013375346017
+        ],
+        [
+          "doc-48074",
+          22.947009488658004
+        ],
+        [
+          "doc-68299",
+          22.20902552654644
+        ],
+        [
+          "doc-108472",
+          21.79906626813051
+        ]
+      ]
+    }
+  ]
+}

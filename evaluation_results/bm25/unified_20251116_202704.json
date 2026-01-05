@@ -1,0 +1,7018 @@
+{
+  "config": {
+    "retriever": "bm25",
+    "generator": "unified",
+    "model": "models/finetuned-qwen-3b",
+    "use_fewshot": true,
+    "num_examples": 10,
+    "top_k": 15
+  },
+  "metrics": {
+    "exact_match": 24.0,
+    "ndcg@10": 57.00296034391377,
+    "num_queries": 100,
+    "total_time": 276.61609411239624
+  },
+  "per_query_results": [
+    {
+      "id": "5ae3f9c45542995ad6573cfe",
+      "question": "The second place finisher of the 2011 Gran Premio Santander d'Italia drove for who when he won the 2009 FIA Formula One World Championship?",
+      "predicted_answer": "1996",
+      "ground_truth_answer": "Brawn GP",
+      "exact_match": 0,
+      "ndcg@10": 0.38685280723454163,
+      "retrieved_docs": [
+        [
+          "doc-45965",
+          49.09095507889252
+        ],
+        [
+          "doc-23954",
+          46.73331911281806
+        ],
+        [
+          "doc-43480",
+          38.219515638013085
+        ],
+        [
+          "doc-43038",
+          37.36483576117537
+        ],
+        [
+          "doc-45341",
+          34.56638405987466
+        ],
+        [
+          "doc-119898",
+          34.00465883709025
+        ],
+        [
+          "doc-30900",
+          32.12034284290574
+        ],
+        [
+          "doc-90926",
+          32.12034284290574
+        ],
+        [
+          "doc-38993",
+          32.12034284290574
+        ],
+        [
+          "doc-95179",
+          31.66126070228429
+        ],
+        [
+          "doc-109",
+          31.062716437433554
+        ],
+        [
+          "doc-80817",
+          31.055088622365748
+        ],
+        [
+          "doc-82137",
+          30.871372291424493
+        ],
+        [
+          "doc-111768",
+          29.994112211735487
+        ],
+        [
+          "doc-83853",
+          29.002852693170137
+        ]
+      ]
+    },
+    {
+      "id": "5ac1773f5542994ab5c67d52",
+      "question": "Geoff Peterson is an animatronic human skeleton that served as the sidekick on the late-night talk show \"The Late Late Show with Craig Ferguson\", often referred to as a \"robot skeleton\", Peterson is a radio-controlled robot puppet, are animatronics refers to the use of robotic devices to emulate a human or an animal, or bring lifelike characteristics to an otherwise inanimate object, was designed and built by who, of \"MythBusters\"?",
+      "predicted_answer": "Grant Imahara",
+      "ground_truth_answer": "Grant Imahara",
+      "exact_match": 1,
+      "ndcg@10": 1.0,
+      "retrieved_docs": [
+        [
+          "doc-129052",
+          122.95676208459639
+        ],
+        [
+          "doc-96349",
+          110.7580425293376
+        ],
+        [
+          "doc-28953",
+          66.34374151242233
+        ],
+        [
+          "doc-11024",
+          43.20936482315509
+        ],
+        [
+          "doc-95591",
+          43.08977794321469
+        ],
+        [
+          "doc-44493",
+          39.780113884132604
+        ],
+        [
+          "doc-7913",
+          33.638023878611136
+        ],
+        [
+          "doc-43796",
+          31.40027778714163
+        ],
+        [
+          "doc-106021",
+          31.26196009888352
+        ],
+        [
+          "doc-71209",
+          31.016587420053533
+        ],
+        [
+          "doc-16832",
+          30.337821675906323
+        ],
+        [
+          "doc-133688",
+          30.14318533401853
+        ],
+        [
+          "doc-1819",
+          29.0340860897833
+        ],
+        [
+          "doc-128616",
+          28.785678940583963
+        ],
+        [
+          "doc-82475",
+          28.785678940583963
+        ]
+      ]
+    },
+    {
+      "id": "5ae315dd5542990afbd1e0ab",
+      "question": "Who was a part of the Paris postwar literary movement in the 1950s, Terry Southern or Winston Churchill?",
+      "predicted_answer": "Terry Southern",
+      "ground_truth_answer": "Terry Southern",
+      "exact_match": 1,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-20654",
+          41.17536811557829
+        ],
+        [
+          "doc-122944",
+          23.31383071765237
+        ],
+        [
+          "doc-7029",
+          16.65972809999575
+        ],
+        [
+          "doc-44100",
+          15.358596465031757
+        ],
+        [
+          "doc-58196",
+          15.188647870107305
+        ],
+        [
+          "doc-61347",
+          15.091815041784804
+        ],
+        [
+          "doc-20848",
+          14.56033128923826
+        ],
+        [
+          "doc-79358",
+          14.56033128923826
+        ],
+        [
+          "doc-90793",
+          14.4407752071737
+        ],
+        [
+          "doc-83581",
+          14.413305611578664
+        ],
+        [
+          "doc-89284",
+          14.230189863652981
+        ],
+        [
+          "doc-126634",
+          14.230189863652981
+        ],
+        [
+          "doc-55662",
+          14.230189863652981
+        ],
+        [
+          "doc-29353",
+          14.191043180160019
+        ],
+        [
+          "doc-42189",
+          13.919951915428221
+        ]
+      ]
+    },
+    {
+      "id": "5ae1d5ac5542997f29b3c145",
+      "question": "Who performed a song written by Verse Simmons that features the story of a fugitive who has shot a man?",
+      "predicted_answer": "\". Redman's verse is cut from both the group's album and the video version as he does not appear in the video.This song was also one of the hottest songs for club mix music that originated out of their hometown on Baltimore.",
+      "ground_truth_answer": "Rihanna",
+      "exact_match": 0,
+      "ndcg@10": 0.0,
+      "retrieved_docs": [
+        [
+          "doc-34000",
+          22.743242679569047
+        ],
+        [
+          "doc-85989",
+          19.5856359111716
+        ],
+        [
+          "doc-38611",
+          19.53154550706284
+        ],
+        [
+          "doc-13941",
+          19.50304545532694
+        ],
+        [
+          "doc-116985",
+          19.42971288232976
+        ],
+        [
+          "doc-23769",
+          18.931595153819508
+        ],
+        [
+          "doc-68510",
+          18.764869873809456
+        ],
+        [
+          "doc-113670",
+          18.73074150103881
+        ],
+        [
+          "doc-94622",
+          18.73074150103881
+        ],
+        [
+          "doc-30789",
+          18.73074150103881
+        ],
+        [
+          "doc-483",
+          18.05554732584203
+        ],
+        [
+          "doc-134671",
+          17.942032685849476
+        ],
+        [
+          "doc-139150",
+          17.751796422741783
+        ],
+        [
+          "doc-132328",
+          17.751796422741783
+        ],
+        [
+          "doc-124075",
+          17.314770802217165
+        ]
+      ]
+    },
+    {
+      "id": "5a77251055429966f1a36ca5",
+      "question": "Which is currently more valuable, Temagami-Lorrain Mine or Meadowbank Gold Mine?",
+      "predicted_answer": "Temagami-Lorrain Mine",
+      "ground_truth_answer": "Meadowbank Gold Mine",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-130898",
+          39.34376449789696
+        ],
+        [
+          "doc-142444",
+          39.34376449789696
+        ],
+        [
+          "doc-111624",
+          28.212270463847187
+        ],
+        [
+          "doc-134578",
+          28.212270463847187
+        ],
+        [
+          "doc-21448",
+          20.847118771235245
+        ],
+        [
+          "doc-115257",
+          20.721415772620666
+        ],
+        [
+          "doc-76888",
+          20.721415772620666
+        ],
+        [
+          "doc-116836",
+          20.721415772620666
+        ],
+        [
+          "doc-77331",
+          20.721415772620666
+        ],
+        [
+          "doc-82960",
+          20.713619678401734
+        ],
+        [
+          "doc-16590",
+          20.713619678401734
+        ],
+        [
+          "doc-50703",
+          20.713619678401734
+        ],
+        [
+          "doc-16871",
+          20.674359057601926
+        ],
+        [
+          "doc-93034",
+          20.674359057601926
+        ],
+        [
+          "doc-16330",
+          20.13224011511467
+        ]
+      ]
+    },
+    {
+      "id": "5ae3fc935542992f92d823aa",
+      "question": "Are Peter Bjorn and John and KMFDM both Swedish bands?",
+      "predicted_answer": "yes",
+      "ground_truth_answer": "no",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-133467",
+          31.349961652285124
+        ],
+        [
+          "doc-21655",
+          27.476642210020373
+        ],
+        [
+          "doc-121391",
+          24.94131785956798
+        ],
+        [
+          "doc-38727",
+          22.258758011167643
+        ],
+        [
+          "doc-123909",
+          22.258758011167643
+        ],
+        [
+          "doc-62516",
+          21.699905366753804
+        ],
+        [
+          "doc-20920",
+          21.55793799466027
+        ],
+        [
+          "doc-37941",
+          19.687443187876664
+        ],
+        [
+          "doc-76719",
+          18.500785944331984
+        ],
+        [
+          "doc-27798",
+          18.26930391150511
+        ],
+        [
+          "doc-114146",
+          18.186044196754985
+        ],
+        [
+          "doc-31035",
+          17.99306471433468
+        ],
+        [
+          "doc-2126",
+          17.99306471433468
+        ],
+        [
+          "doc-117272",
+          14.94057342007337
+        ],
+        [
+          "doc-47329",
+          14.663285182268652
+        ]
+      ]
+    },
+    {
+      "id": "5a7384f0554299623ed4abce",
+      "question": "Lakshmi Niwas Mittal is the CEO of what Luxembourg-based multinational steel manufacturing corporation?",
+      "predicted_answer": "ArcelorMittal",
+      "ground_truth_answer": "ArcelorMittal",
+      "exact_match": 1,
+      "ndcg@10": 1.0,
+      "retrieved_docs": [
+        [
+          "doc-118357",
+          58.60671518018912
+        ],
+        [
+          "doc-116820",
+          35.54107232650198
+        ],
+        [
+          "doc-30317",
+          29.249546292611114
+        ],
+        [
+          "doc-108990",
+          27.015853488883607
+        ],
+        [
+          "doc-132957",
+          26.464658641258126
+        ],
+        [
+          "doc-21022",
+          23.734745297051564
+        ],
+        [
+          "doc-127637",
+          23.734745297051564
+        ],
+        [
+          "doc-48300",
+          20.32393151789922
+        ],
+        [
+          "doc-141217",
+          18.10051723252848
+        ],
+        [
+          "doc-77085",
+          16.884896748633416
+        ],
+        [
+          "doc-22228",
+          16.399935513642063
+        ],
+        [
+          "doc-84517",
+          16.10253885156049
+        ],
+        [
+          "doc-92628",
+          15.670003694980494
+        ],
+        [
+          "doc-44560",
+          15.510822706319697
+        ],
+        [
+          "doc-1851",
+          15.445869512359302
+        ]
+      ]
+    },
+    {
+      "id": "5a8c82c4554299653c1aa09f",
+      "question": "Are Deryck Whibley and Sandeul from the same country?",
+      "predicted_answer": "no",
+      "ground_truth_answer": "no",
+      "exact_match": 1,
+      "ndcg@10": 0.6052602440527057,
+      "retrieved_docs": [
+        [
+          "doc-108826",
+          35.684138054049185
+        ],
+        [
+          "doc-89854",
+          31.83167228347351
+        ],
+        [
+          "doc-62249",
+          25.614291403616438
+        ],
+        [
+          "doc-89238",
+          24.054740379409388
+        ],
+        [
+          "doc-22375",
+          17.706718857655197
+        ],
+        [
+          "doc-14928",
+          14.903017356121785
+        ],
+        [
+          "doc-123994",
+          11.42765608476531
+        ],
+        [
+          "doc-99315",
+          11.42765608476531
+        ],
+        [
+          "doc-43278",
+          11.42765608476531
+        ],
+        [
+          "doc-39357",
+          11.42765608476531
+        ],
+        [
+          "doc-35244",
+          11.42765608476531
+        ],
+        [
+          "doc-71720",
+          11.140066544583366
+        ],
+        [
+          "doc-136517",
+          10.358051270423996
+        ],
+        [
+          "doc-7310",
+          9.573961284638038
+        ],
+        [
+          "doc-56",
+          0.0
+        ]
+      ]
+    },
+    {
+      "id": "5ab37aae55429969a97a8159",
+      "question": "The father of Beorhtnoð æthling of Kent ruled Mercia between what years ?",
+      "predicted_answer": "Mercia",
+      "ground_truth_answer": "852 to 874",
+      "exact_match": 0,
+      "ndcg@10": 0.7903864795495061,
+      "retrieved_docs": [
+        [
+          "doc-54684",
+          56.679641645211106
+        ],
+        [
+          "doc-10785",
+          47.62102626098165
+        ],
+        [
+          "doc-111671",
+          21.17658306748224
+        ],
+        [
+          "doc-113203",
+          19.039153252946225
+        ],
+        [
+          "doc-144619",
+          18.349281665075022
+        ],
+        [
+          "doc-97763",
+          16.39992232033595
+        ],
+        [
+          "doc-97325",
+          16.36630965265696
+        ],
+        [
+          "doc-35557",
+          16.221977598466353
+        ],
+        [
+          "doc-79787",
+          15.307210436325532
+        ],
+        [
+          "doc-34871",
+          15.266562510876035
+        ],
+        [
+          "doc-92624",
+          14.705418355831089
+        ],
+        [
+          "doc-54531",
+          14.098429294983983
+        ],
+        [
+          "doc-118127",
+          13.91029007703964
+        ],
+        [
+          "doc-125498",
+          13.46065211808364
+        ],
+        [
+          "doc-1681",
+          13.346999211419128
+        ]
+      ]
+    },
+    {
+      "id": "5ade23b35542992fa25da6dd",
+      "question": "The Rieder Automatic Rifle was a model made by the company that created firearms for the forces of what country?",
+      "predicted_answer": "Turkey",
+      "ground_truth_answer": "British Empire and Commonwealth",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-16411",
+          44.644661272144745
+        ],
+        [
+          "doc-99914",
+          35.14084373961617
+        ],
+        [
+          "doc-31003",
+          31.694730746322644
+        ],
+        [
+          "doc-8456",
+          31.534450114474218
+        ],
+        [
+          "doc-76065",
+          24.623655465511625
+        ],
+        [
+          "doc-45431",
+          24.44271617442149
+        ],
+        [
+          "doc-67127",
+          24.223013375346017
+        ],
+        [
+          "doc-48074",
+          22.947009488658004
+        ],
+        [
+          "doc-68299",
+          22.20902552654644
+        ],
+        [
+          "doc-108472",
+          21.79906626813051
+        ],
+        [
+          "doc-139990",
+          21.431466734832462
+        ],
+        [
+          "doc-34145",
+          21.40392432624039
+        ],
+        [
+          "doc-11956",
+          20.053460013221514
+        ],
+        [
+          "doc-134100",
+          20.040877307315625
+        ],
+        [
+          "doc-8685",
+          20.034568140493903
+        ]
+      ]
+    },
+    {
+      "id": "5ab4c3ad55429942dd415f88",
+      "question": "Which star of Slappy and the Stinkers was born in the year 1960 ?",
+      "predicted_answer": "Park Bo-young",
+      "ground_truth_answer": "B. D. Wong",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-74566",
+          31.935015479584763
+        ],
+        [
+          "doc-116361",
+          16.55766753854492
+        ],
+        [
+          "doc-43375",
+          16.13955996763898
+        ],
+        [
+          "doc-68852",
+          16.106214540586745
+        ],
+        [
+          "doc-78020",
+          15.895110814295
+        ],
+        [
+          "doc-134545",
+          15.367112724628154
+        ],
+        [
+          "doc-7977",
+          13.740538642256546
+        ],
+        [
+          "doc-141225",
+          12.852646936577205
+        ],
+        [
+          "doc-108869",
+          12.55107713140479
+        ],
+        [
+          "doc-131794",
+          12.356101447478558
+        ],
+        [
+          "doc-91312",
+          12.192084121224804
+        ],
+        [
+          "doc-59530",
+          12.005782500324194
+        ],
+        [
+          "doc-132803",
+          11.908854348462075
+        ],
+        [
+          "doc-75455",
+          11.908854348462075
+        ],
+        [
+          "doc-130689",
+          11.908854348462075
+        ]
+      ]
+    },
+    {
+      "id": "5ac123b2554299294b2190b7",
+      "question": "Which National Historical Park was preliminarily excavated from 1896-1901?",
+      "predicted_answer": "What type of park does both the Blackstone River Valley National Historical Park and the Klondike Gold Rush National Historical Park have in common?",
+      "ground_truth_answer": "Chaco Culture National Historical Park",
+      "exact_match": 0,
+      "ndcg@10": 0.3065735963827292,
+      "retrieved_docs": [
+        [
+          "doc-119624",
+          21.05837792924663
+        ],
+        [
+          "doc-43090",
+          19.88646359217164
+        ],
+        [
+          "doc-18117",
+          19.217012424597737
+        ],
+        [
+          "doc-83215",
+          18.55835600026047
+        ],
+        [
+          "doc-31243",
+          18.41224344152614
+        ],
+        [
+          "doc-58629",
+          18.05674126612824
+        ],
+        [
+          "doc-59335",
+          17.990425836735884
+        ],
+        [
+          "doc-105161",
+          16.923315896228925
+        ],
+        [
+          "doc-18977",
+          16.20399936456721
+        ],
+        [
+          "doc-92798",
+          15.747854414901045
+        ],
+        [
+          "doc-51503",
+          15.338412284573446
+        ],
+        [
+          "doc-131157",
+          15.157889435062575
+        ],
+        [
+          "doc-67297",
+          13.597374839751348
+        ],
+        [
+          "doc-73811",
+          13.346487141321962
+        ],
+        [
+          "doc-143886",
+          13.136318483155112
+        ]
+      ]
+    },
+    {
+      "id": "5adff32f55429925eb1afb77",
+      "question": "New Order was formed of the remaining members of the band formed in what Manchester town?",
+      "predicted_answer": "Manchester",
+      "ground_truth_answer": "Salford",
+      "exact_match": 0,
+      "ndcg@10": 0.38685280723454163,
+      "retrieved_docs": [
+        [
+          "doc-55764",
+          34.63724539735313
+        ],
+        [
+          "doc-100896",
+          34.63724539735313
+        ],
+        [
+          "doc-31311",
+          34.63724539735313
+        ],
+        [
+          "doc-68562",
+          27.806143540559255
+        ],
+        [
+          "doc-3432",
+          26.591415269685672
+        ],
+        [
+          "doc-12557",
+          26.338766005008086
+        ],
+        [
+          "doc-21935",
+          26.338766005008086
+        ],
+        [
+          "doc-128938",
+          26.338766005008086
+        ],
+        [
+          "doc-92545",
+          25.56427056362199
+        ],
+        [
+          "doc-124754",
+          24.88811983631215
+        ],
+        [
+          "doc-143746",
+          24.88811983631215
+        ],
+        [
+          "doc-58612",
+          24.373941745573227
+        ],
+        [
+          "doc-122450",
+          24.373941745573227
+        ],
+        [
+          "doc-67357",
+          23.108523899567942
+        ],
+        [
+          "doc-104546",
+          23.04059665269234
+        ]
+      ]
+    },
+    {
+      "id": "5a77c1e155429967ab105267",
+      "question": "Was Kang Seung-yoon or Frank Sinatra born first?",
+      "predicted_answer": "Frank Sinatra",
+      "ground_truth_answer": "Francis Albert Sinatra",
+      "exact_match": 0,
+      "ndcg@10": 0.0,
+      "retrieved_docs": [
+        [
+          "doc-63738",
+          24.470883436568915
+        ],
+        [
+          "doc-1774",
+          24.470883436568915
+        ],
+        [
+          "doc-4441",
+          23.01885631902175
+        ],
+        [
+          "doc-121586",
+          22.88980183008862
+        ],
+        [
+          "doc-137387",
+          22.50596914317737
+        ],
+        [
+          "doc-142224",
+          22.323905004083244
+        ],
+        [
+          "doc-31274",
+          21.057011800374518
+        ],
+        [
+          "doc-103064",
+          21.057011800374518
+        ],
+        [
+          "doc-83890",
+          20.54606781388938
+        ],
+        [
+          "doc-81025",
+          20.54606781388938
+        ],
+        [
+          "doc-133046",
+          20.107186214096707
+        ],
+        [
+          "doc-89414",
+          19.488244764301665
+        ],
+        [
+          "doc-137421",
+          19.173853324923805
+        ],
+        [
+          "doc-29355",
+          19.173853324923805
+        ],
+        [
+          "doc-29513",
+          19.173853324923805
+        ]
+      ]
+    },
+    {
+      "id": "5a769950554299373536010e",
+      "question": "HM Prison Kirkham is a Category D men's prison, located southwest of which small town, and civil parish in the Borough of Fylde?",
+      "predicted_answer": "Keisley",
+      "ground_truth_answer": "Kirkham in Lancashire",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-32834",
+          65.92653699443282
+        ],
+        [
+          "doc-40573",
+          45.86778564856395
+        ],
+        [
+          "doc-1746",
+          44.52141960861411
+        ],
+        [
+          "doc-90975",
+          43.98685497380761
+        ],
+        [
+          "doc-43843",
+          43.642932062212886
+        ],
+        [
+          "doc-26722",
+          42.88351118748495
+        ],
+        [
+          "doc-103363",
+          42.07719780885159
+        ],
+        [
+          "doc-33127",
+          38.01712295497482
+        ],
+        [
+          "doc-56964",
+          37.966281449821885
+        ],
+        [
+          "doc-58622",
+          35.99809188883612
+        ],
+        [
+          "doc-16645",
+          35.48852782281341
+        ],
+        [
+          "doc-85884",
+          34.95403334720678
+        ],
+        [
+          "doc-86574",
+          33.44701669668222
+        ],
+        [
+          "doc-46425",
+          30.068969275302347
+        ],
+        [
+          "doc-77152",
+          28.33933005233105
+        ]
+      ]
+    },
+    {
+      "id": "5abe03ac5542993f32c2a086",
+      "question": "Ghulam Haider was the first music director who showed complete faith in musical talent of which best-known and most respected playback singers in India?",
+      "predicted_answer": "the Filmfare award twice.",
+      "ground_truth_answer": "Lata Mangeshkar",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-136992",
+          54.341650554044136
+        ],
+        [
+          "doc-23663",
+          54.341650554044136
+        ],
+        [
+          "doc-95237",
+          38.52929263192151
+        ],
+        [
+          "doc-117317",
+          36.9460033695619
+        ],
+        [
+          "doc-61324",
+          29.13795003927612
+        ],
+        [
+          "doc-37143",
+          28.116850807840294
+        ],
+        [
+          "doc-112694",
+          27.89320599174112
+        ],
+        [
+          "doc-57513",
+          26.67239001218158
+        ],
+        [
+          "doc-125636",
+          26.283985866136305
+        ],
+        [
+          "doc-45738",
+          24.394044014508623
+        ],
+        [
+          "doc-136837",
+          23.041149020789717
+        ],
+        [
+          "doc-29584",
+          22.919249002741132
+        ],
+        [
+          "doc-43127",
+          22.919249002741132
+        ],
+        [
+          "doc-11546",
+          21.730865877559076
+        ],
+        [
+          "doc-84051",
+          21.18566733266315
+        ]
+      ]
+    },
+    {
+      "id": "5ab5ea9c5542997d4ad1f249",
+      "question": "When was the frontman of Anal Cunt died?",
+      "predicted_answer": "July 4, 2009",
+      "ground_truth_answer": "June 11, 2011",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-51003",
+          41.28310571419034
+        ],
+        [
+          "doc-51142",
+          31.348109056812344
+        ],
+        [
+          "doc-37530",
+          25.827191964792892
+        ],
+        [
+          "doc-134676",
+          18.544563082453447
+        ],
+        [
+          "doc-118157",
+          17.691167097592377
+        ],
+        [
+          "doc-124968",
+          13.223521503401324
+        ],
+        [
+          "doc-23166",
+          12.485258374770957
+        ],
+        [
+          "doc-91990",
+          12.297431006321665
+        ],
+        [
+          "doc-138575",
+          10.97640477689598
+        ],
+        [
+          "doc-33806",
+          10.416897864393743
+        ],
+        [
+          "doc-98788",
+          10.281124081524743
+        ],
+        [
+          "doc-69919",
+          10.158002855935406
+        ],
+        [
+          "doc-104945",
+          10.158002855935406
+        ],
+        [
+          "doc-80303",
+          10.03332192887552
+        ],
+        [
+          "doc-8554",
+          10.03332192887552
+        ]
+      ]
+    },
+    {
+      "id": "5ae1190355429901ffe4ad85",
+      "question": "Which is a type of mulled wine, punch or wassail -- Smoking Bishop or Martini?",
+      "predicted_answer": "Smoking Bishop",
+      "ground_truth_answer": "Smoking Bishop",
+      "exact_match": 1,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-120810",
+          55.01805587351977
+        ],
+        [
+          "doc-43658",
+          55.01805587351977
+        ],
+        [
+          "doc-9058",
+          26.177679721132897
+        ],
+        [
+          "doc-96599",
+          18.369443546182424
+        ],
+        [
+          "doc-133419",
+          16.415837060342763
+        ],
+        [
+          "doc-67096",
+          16.31924637654464
+        ],
+        [
+          "doc-73209",
+          15.965455334848286
+        ],
+        [
+          "doc-57639",
+          15.965455334848286
+        ],
+        [
+          "doc-28746",
+          15.965455334848286
+        ],
+        [
+          "doc-22066",
+          15.91010885632193
+        ],
+        [
+          "doc-65459",
+          15.866907015373426
+        ],
+        [
+          "doc-68953",
+          15.866907015373426
+        ],
+        [
+          "doc-24535",
+          15.348772109693414
+        ],
+        [
+          "doc-61894",
+          15.348772109693414
+        ],
+        [
+          "doc-74150",
+          14.996282460566013
+        ]
+      ]
+    },
+    {
+      "id": "5a8e0a9d5542995085b373a8",
+      "question": "Gournay Court is the home of the politician who was first elected as an MP for which constituency in 2010?",
+      "predicted_answer": "962 to 1977. C. K. Jaffer Sharief of the INC was its MP for five consecutive terms from 1977–1996 before being denied ticket in the 1996 election. C. Narayanaswamy of the Janata Dal party defeated Mohammed Obedulla Sharief. This brought to an end a 45-year period where this constituency had been represented by a member of the INC from 1951–96. Sharief became the MP once again in 1998. He was also re-elected in 1999 to serve his seventh term as MP for this constituency. H. T. Sangliana of the Bharatiya Janata Party (BJP) represented this constituency in 2004. D. B. Chandre Gowda also of the BJP was elected in the 2009 election. As of the latest elections in 2014, its current MP is D. V. Sadananda Gowda of the BJP who is also the incumbent Minister of Railways. Of the 16 elections held in this constituency, the most successful party is the INC who have won on 1",
+      "ground_truth_answer": "North East Somerset",
+      "exact_match": 0,
+      "ndcg@10": 0.23719771276929622,
+      "retrieved_docs": [
+        [
+          "doc-92487",
+          31.11726177102296
+        ],
+        [
+          "doc-138162",
+          27.560650317701626
+        ],
+        [
+          "doc-110510",
+          26.4229523532979
+        ],
+        [
+          "doc-128013",
+          25.149771176145634
+        ],
+        [
+          "doc-142717",
+          23.60091891506125
+        ],
+        [
+          "doc-90239",
+          23.40968137684983
+        ],
+        [
+          "doc-3546",
+          23.40968137684983
+        ],
+        [
+          "doc-131308",
+          23.40968137684983
+        ],
+        [
+          "doc-86141",
+          23.353370938137367
+        ],
+        [
+          "doc-76401",
+          22.87884287561141
+        ],
+        [
+          "doc-141726",
+          22.641141460986873
+        ],
+        [
+          "doc-83893",
+          22.098345836556483
+        ],
+        [
+          "doc-80808",
+          22.098345836556483
+        ],
+        [
+          "doc-90855",
+          21.71988442184982
+        ],
+        [
+          "doc-76854",
+          21.645303659777223
+        ]
+      ]
+    },
+    {
+      "id": "5ac2579d55429951e9e68561",
+      "question": "Who produce the British crime drama series in which Ricky Tomlinson acted as DCI Charlie Wise?",
+      "predicted_answer": "Left Bank Pictures",
+      "ground_truth_answer": "Granada Television for ITV",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-11222",
+          40.50697132369512
+        ],
+        [
+          "doc-16181",
+          30.783839944029957
+        ],
+        [
+          "doc-36792",
+          25.70953998761975
+        ],
+        [
+          "doc-29761",
+          24.5311437865609
+        ],
+        [
+          "doc-53960",
+          24.5311437865609
+        ],
+        [
+          "doc-298",
+          22.916618261078256
+        ],
+        [
+          "doc-98922",
+          22.51797906729262
+        ],
+        [
+          "doc-11939",
+          22.51797906729262
+        ],
+        [
+          "doc-10085",
+          22.407870700277506
+        ],
+        [
+          "doc-105697",
+          20.546966516013402
+        ],
+        [
+          "doc-20048",
+          19.843433411885634
+        ],
+        [
+          "doc-134711",
+          19.523404393988002
+        ],
+        [
+          "doc-23759",
+          19.514484588054593
+        ],
+        [
+          "doc-95006",
+          19.514484588054593
+        ],
+        [
+          "doc-127542",
+          19.435596833633635
+        ]
+      ]
+    },
+    {
+      "id": "5ae0baad55429924de1b715e",
+      "question": "The Rookie stars which actress of Australian heritage?",
+      "predicted_answer": "Jennifer Tilly",
+      "ground_truth_answer": "Rachel Anne Griffiths",
+      "exact_match": 0,
+      "ndcg@10": 0.3065735963827292,
+      "retrieved_docs": [
+        [
+          "doc-139775",
+          14.661240353457233
+        ],
+        [
+          "doc-99755",
+          14.213288685873422
+        ],
+        [
+          "doc-118872",
+          14.213288685873422
+        ],
+        [
+          "doc-5316",
+          14.213288685873422
+        ],
+        [
+          "doc-45102",
+          14.213288685873422
+        ],
+        [
+          "doc-136010",
+          13.104519073390879
+        ],
+        [
+          "doc-89564",
+          12.902021667264027
+        ],
+        [
+          "doc-87030",
+          12.67986235546264
+        ],
+        [
+          "doc-56091",
+          12.424052834896923
+        ],
+        [
+          "doc-83096",
+          12.424052834896923
+        ],
+        [
+          "doc-70286",
+          12.408409124505733
+        ],
+        [
+          "doc-117158",
+          12.408409124505733
+        ],
+        [
+          "doc-59218",
+          11.847807130431299
+        ],
+        [
+          "doc-7002",
+          11.843430212599245
+        ],
+        [
+          "doc-67865",
+          11.843430212599245
+        ]
+      ]
+    },
+    {
+      "id": "5a8af4b75542996c9b8d5f7f",
+      "question": "What percentage of CityCenter in Las Vegas does the owner of Gold Strike Casino Resort  own?",
+      "predicted_answer": "unknown",
+      "ground_truth_answer": "50 percent",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-103612",
+          38.31190340069871
+        ],
+        [
+          "doc-2130",
+          36.49907604634225
+        ],
+        [
+          "doc-116928",
+          36.49907604634225
+        ],
+        [
+          "doc-1675",
+          36.16126312861411
+        ],
+        [
+          "doc-117333",
+          35.87485810482012
+        ],
+        [
+          "doc-8172",
+          35.837521326996246
+        ],
+        [
+          "doc-77137",
+          35.837521326996246
+        ],
+        [
+          "doc-12738",
+          35.56910712943227
+        ],
+        [
+          "doc-22807",
+          35.56910712943227
+        ],
+        [
+          "doc-48783",
+          35.02990795121523
+        ],
+        [
+          "doc-49614",
+          35.02990795121523
+        ],
+        [
+          "doc-123461",
+          35.02990795121523
+        ],
+        [
+          "doc-81884",
+          34.48109480773429
+        ],
+        [
+          "doc-59836",
+          33.958821238480226
+        ],
+        [
+          "doc-70929",
+          33.958821238480226
+        ]
+      ]
+    },
+    {
+      "id": "5ade15f455429975fa854e2c",
+      "question": "The actress that played Tai Frasier in \"Clueless\" also stars with Michael Douglas in a 2001 thriller film based on a novel by what author?",
+      "predicted_answer": "Michael Haneke",
+      "ground_truth_answer": "Andrew Klavan",
+      "exact_match": 0,
+      "ndcg@10": 0.2640681225725909,
+      "retrieved_docs": [
+        [
+          "doc-111048",
+          27.844534940925843
+        ],
+        [
+          "doc-71050",
+          24.861676166450568
+        ],
+        [
+          "doc-59187",
+          24.54952109344391
+        ],
+        [
+          "doc-70096",
+          24.54952109344391
+        ],
+        [
+          "doc-80483",
+          24.54952109344391
+        ],
+        [
+          "doc-125060",
+          23.462903406239494
+        ],
+        [
+          "doc-29467",
+          23.438605866975657
+        ],
+        [
+          "doc-126989",
+          22.22595693074543
+        ],
+        [
+          "doc-14756",
+          22.164206917176003
+        ],
+        [
+          "doc-12244",
+          21.970382710208778
+        ],
+        [
+          "doc-97567",
+          21.95996332433767
+        ],
+        [
+          "doc-77257",
+          21.95996332433767
+        ],
+        [
+          "doc-91874",
+          21.95996332433767
+        ],
+        [
+          "doc-80545",
+          21.85071604643328
+        ],
+        [
+          "doc-100242",
+          21.839925066093727
+        ]
+      ]
+    },
+    {
+      "id": "5a7f1a6055429934daa2fcde",
+      "question": "Happily was co-written by the One Direction band member who got is debut as a singer for what band?",
+      "predicted_answer": "English-Irish boyband One Direction",
+      "ground_truth_answer": "White Eskimo",
+      "exact_match": 0,
+      "ndcg@10": 0.9197207891481876,
+      "retrieved_docs": [
+        [
+          "doc-114682",
+          35.073040243399404
+        ],
+        [
+          "doc-21618",
+          24.4414477424264
+        ],
+        [
+          "doc-45782",
+          22.876569151935357
+        ],
+        [
+          "doc-108480",
+          22.273669257703
+        ],
+        [
+          "doc-29761",
+          20.501511584107416
+        ],
+        [
+          "doc-53960",
+          20.501511584107416
+        ],
+        [
+          "doc-92511",
+          18.833401409322786
+        ],
+        [
+          "doc-73306",
+          18.103259777546977
+        ],
+        [
+          "doc-143383",
+          17.80706740671628
+        ],
+        [
+          "doc-64148",
+          17.753863389263657
+        ],
+        [
+          "doc-141024",
+          17.565468389578562
+        ],
+        [
+          "doc-49469",
+          17.565468389578562
+        ],
+        [
+          "doc-118945",
+          17.563837813647197
+        ],
+        [
+          "doc-128511",
+          16.877076232495895
+        ],
+        [
+          "doc-5269",
+          16.877076232495895
+        ]
+      ]
+    },
+    {
+      "id": "5ae1dbab5542997283cd22a2",
+      "question": "Which role in \"Mad Men\" is played by an actor who appeared in \"Stolen\"?",
+      "predicted_answer": "90s were unsuccessful, including \"Kabhi Kabhie\" (1994), \"Jai Ho\" (1995), \"Chalo Jhoom\" (1995), \"Ghar\" (1996), \"Pyaar Ki Awaaz\" (1996), \"Naya Kuch Naya Dil\" (1996), \"Tumhari\" (1996), \"Rang De Basanti\" (1998), \"Lagaan\" (1998), \"Kahani\" (1998), \"Kabhi Khushi Kabhie Gham\" (1999), \"Hum Tidhe Hum\" (1999), \"Kabir Singh\" (1999), \"Kabhi Khushi Kabhie Gill\" (1999), \"Kabhi Khushi Kabhie Gill\" (1999), \"Kabhi Khushi Kabhie Gill\" (1999), \"Kabhi Khushi Kabhie Gill\" (1999), \"Kabhi Khushi Kabhie Gill\" (19",
+      "ground_truth_answer": "Don Draper",
+      "exact_match": 0,
+      "ndcg@10": 0.0,
+      "retrieved_docs": [
+        [
+          "doc-12471",
+          17.545154271735015
+        ],
+        [
+          "doc-70887",
+          17.46439470355559
+        ],
+        [
+          "doc-22141",
+          16.91101549454412
+        ],
+        [
+          "doc-136411",
+          16.693271503213555
+        ],
+        [
+          "doc-56735",
+          16.686945396624854
+        ],
+        [
+          "doc-56994",
+          16.58380807410135
+        ],
+        [
+          "doc-20053",
+          16.445036051589597
+        ],
+        [
+          "doc-143246",
+          16.445036051589597
+        ],
+        [
+          "doc-16266",
+          16.414888153398344
+        ],
+        [
+          "doc-72306",
+          16.414888153398344
+        ],
+        [
+          "doc-110484",
+          16.414888153398344
+        ],
+        [
+          "doc-30685",
+          16.101879235608568
+        ],
+        [
+          "doc-23773",
+          16.049000084312
+        ],
+        [
+          "doc-102986",
+          16.043041138874486
+        ],
+        [
+          "doc-1315",
+          16.043041138874486
+        ]
+      ]
+    },
+    {
+      "id": "5a8badba5542996e8ac889b1",
+      "question": "Rye House, Hertfordshire gave its name to the plan to assassinate which royal in 1683?",
+      "predicted_answer": "Charles II",
+      "ground_truth_answer": "King Charles II",
+      "exact_match": 0,
+      "ndcg@10": 0.8503449055347546,
+      "retrieved_docs": [
+        [
+          "doc-50980",
+          32.312246766118754
+        ],
+        [
+          "doc-85250",
+          26.595228622750852
+        ],
+        [
+          "doc-131644",
+          26.595228622750852
+        ],
+        [
+          "doc-129042",
+          25.555392329439883
+        ],
+        [
+          "doc-61140",
+          24.61359933229221
+        ],
+        [
+          "doc-137535",
+          24.61359933229221
+        ],
+        [
+          "doc-14626",
+          21.437982791321154
+        ],
+        [
+          "doc-94811",
+          17.488049198038443
+        ],
+        [
+          "doc-83131",
+          17.488049198038443
+        ],
+        [
+          "doc-137771",
+          17.20006834954146
+        ],
+        [
+          "doc-34492",
+          16.56668020920063
+        ],
+        [
+          "doc-104482",
+          16.37987297922424
+        ],
+        [
+          "doc-58379",
+          16.159705815987937
+        ],
+        [
+          "doc-30223",
+          15.94537882896224
+        ],
+        [
+          "doc-139065",
+          15.543235800453376
+        ]
+      ]
+    },
+    {
+      "id": "5ae7739855429952e35ea918",
+      "question": "What 1993 movie was Emilie Schindler's husband the subject of?",
+      "predicted_answer": "Temptation of a Monk",
+      "ground_truth_answer": "Schindler's List",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-27989",
+          20.398032933737127
+        ],
+        [
+          "doc-118181",
+          15.988218902072507
+        ],
+        [
+          "doc-127679",
+          14.0854004517096
+        ],
+        [
+          "doc-114898",
+          13.832727759396477
+        ],
+        [
+          "doc-13050",
+          13.832727759396477
+        ],
+        [
+          "doc-3612",
+          13.832727759396477
+        ],
+        [
+          "doc-89381",
+          13.832727759396477
+        ],
+        [
+          "doc-118518",
+          13.187286935497852
+        ],
+        [
+          "doc-140815",
+          13.054234793701335
+        ],
+        [
+          "doc-58557",
+          13.054234793701335
+        ],
+        [
+          "doc-73861",
+          13.054234793701335
+        ],
+        [
+          "doc-87993",
+          13.054234793701335
+        ],
+        [
+          "doc-34940",
+          13.054234793701335
+        ],
+        [
+          "doc-77232",
+          13.052324938947915
+        ],
+        [
+          "doc-60121",
+          12.977341038847591
+        ]
+      ]
+    },
+    {
+      "id": "5a8394955542996488c2e466",
+      "question": "What is a club who's player wears Nike Hypervenom boots?",
+      "predicted_answer": "Nike Total 90",
+      "ground_truth_answer": "Leicester City",
+      "exact_match": 0,
+      "ndcg@10": 0.0,
+      "retrieved_docs": [
+        [
+          "doc-12843",
+          16.82961616324973
+        ],
+        [
+          "doc-134838",
+          16.771318326240063
+        ],
+        [
+          "doc-107029",
+          16.668829727064978
+        ],
+        [
+          "doc-128780",
+          16.535794362561006
+        ],
+        [
+          "doc-18520",
+          16.535794362561006
+        ],
+        [
+          "doc-122375",
+          16.245942346596806
+        ],
+        [
+          "doc-3319",
+          14.1335945198745
+        ],
+        [
+          "doc-75995",
+          14.010878606452609
+        ],
+        [
+          "doc-15498",
+          13.976384572958082
+        ],
+        [
+          "doc-16382",
+          13.951159615521743
+        ],
+        [
+          "doc-70194",
+          13.937645128118671
+        ],
+        [
+          "doc-126803",
+          13.773374393471247
+        ],
+        [
+          "doc-13776",
+          13.436728196661498
+        ],
+        [
+          "doc-77691",
+          13.1753199460297
+        ],
+        [
+          "doc-109232",
+          13.163949269876197
+        ]
+      ]
+    },
+    {
+      "id": "5adfac745542995ec70e906a",
+      "question": "What nationality is the actress that portrayed Juliet Sharp in \"Gossip Girl\"?",
+      "predicted_answer": "British",
+      "ground_truth_answer": "American",
+      "exact_match": 0,
+      "ndcg@10": 0.38685280723454163,
+      "retrieved_docs": [
+        [
+          "doc-44009",
+          27.030541283528883
+        ],
+        [
+          "doc-2731",
+          27.030541283528883
+        ],
+        [
+          "doc-112594",
+          27.030541283528883
+        ],
+        [
+          "doc-64428",
+          18.85759020846961
+        ],
+        [
+          "doc-24720",
+          17.36689559198784
+        ],
+        [
+          "doc-34949",
+          14.690375103574045
+        ],
+        [
+          "doc-51866",
+          14.536753858868195
+        ],
+        [
+          "doc-106208",
+          14.474066492836888
+        ],
+        [
+          "doc-104283",
+          14.474066492836888
+        ],
+        [
+          "doc-113077",
+          14.07417120242952
+        ],
+        [
+          "doc-6031",
+          13.97726903636844
+        ],
+        [
+          "doc-108432",
+          13.915402508628091
+        ],
+        [
+          "doc-29217",
+          13.912322182400398
+        ],
+        [
+          "doc-36001",
+          13.777390622798638
+        ],
+        [
+          "doc-59883",
+          13.777390622798638
+        ]
+      ]
+    },
+    {
+      "id": "5ae4d0e35542990ba0bbb159",
+      "question": "Who appeared in a 2012 epic musical drama film directed by Tom Hooper?",
+      "predicted_answer": "Hugh Jackman",
+      "ground_truth_answer": "Caroline Sheen",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-36273",
+          26.319920403767107
+        ],
+        [
+          "doc-119381",
+          20.52595813556349
+        ],
+        [
+          "doc-65478",
+          19.78567491219667
+        ],
+        [
+          "doc-101995",
+          19.181186903118316
+        ],
+        [
+          "doc-2901",
+          19.151618923455636
+        ],
+        [
+          "doc-22216",
+          19.151618923455636
+        ],
+        [
+          "doc-72511",
+          19.151618923455636
+        ],
+        [
+          "doc-93303",
+          18.84873952428451
+        ],
+        [
+          "doc-120808",
+          18.84873952428451
+        ],
+        [
+          "doc-121961",
+          18.803740385104337
+        ],
+        [
+          "doc-19430",
+          18.803740385104337
+        ],
+        [
+          "doc-99085",
+          18.300649712074623
+        ],
+        [
+          "doc-6548",
+          18.300649712074623
+        ],
+        [
+          "doc-37037",
+          18.300649712074623
+        ],
+        [
+          "doc-66989",
+          18.300649712074623
+        ]
+      ]
+    },
+    {
+      "id": "5ae541c655429908b63265bd",
+      "question": "Princes House, Brighton had offices used by which British arm of Aviva insurance company?",
+      "predicted_answer": "NZI",
+      "ground_truth_answer": "Norwich Union",
+      "exact_match": 0,
+      "ndcg@10": 0.5437713091520254,
+      "retrieved_docs": [
+        [
+          "doc-95473",
+          36.09585477030398
+        ],
+        [
+          "doc-17150",
+          26.797478386783663
+        ],
+        [
+          "doc-144255",
+          22.790643981564017
+        ],
+        [
+          "doc-127242",
+          22.28174179636455
+        ],
+        [
+          "doc-56201",
+          21.3735119843727
+        ],
+        [
+          "doc-119226",
+          19.846851550418364
+        ],
+        [
+          "doc-46753",
+          18.699234480466245
+        ],
+        [
+          "doc-109441",
+          18.060967154940958
+        ],
+        [
+          "doc-6011",
+          15.801321187535741
+        ],
+        [
+          "doc-96026",
+          15.767241734519665
+        ],
+        [
+          "doc-80954",
+          15.113546970906032
+        ],
+        [
+          "doc-71858",
+          14.97070581976323
+        ],
+        [
+          "doc-49071",
+          14.96578507289014
+        ],
+        [
+          "doc-62972",
+          14.927794443586183
+        ],
+        [
+          "doc-91850",
+          14.726706875588269
+        ]
+      ]
+    },
+    {
+      "id": "5a84c7cf5542991dd0999df6",
+      "question": "Which guest musician from the American hard rock band formed on Long Island, New York in 1969 appeared on Step Back?",
+      "predicted_answer": "Jason \"Gong\" Jones",
+      "ground_truth_answer": "Leslie West",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-58687",
+          26.34581824111554
+        ],
+        [
+          "doc-43610",
+          23.87670306804917
+        ],
+        [
+          "doc-72716",
+          23.65787150490579
+        ],
+        [
+          "doc-92683",
+          22.966660323145366
+        ],
+        [
+          "doc-87416",
+          22.943193081686044
+        ],
+        [
+          "doc-128407",
+          22.917846622230513
+        ],
+        [
+          "doc-115315",
+          22.914177964769237
+        ],
+        [
+          "doc-116499",
+          22.449146780684153
+        ],
+        [
+          "doc-124816",
+          22.30297370636528
+        ],
+        [
+          "doc-111215",
+          22.14526351504445
+        ],
+        [
+          "doc-99204",
+          22.008404703138616
+        ],
+        [
+          "doc-122624",
+          21.82690873785444
+        ],
+        [
+          "doc-13290",
+          21.755909633932266
+        ],
+        [
+          "doc-130418",
+          21.755909633932266
+        ],
+        [
+          "doc-129850",
+          21.70777003266993
+        ]
+      ]
+    },
+    {
+      "id": "5abbe484554299660624173a",
+      "question": "Did Klaus-Dietrich Flade and Umberto Guidoni visit the same space stations?",
+      "predicted_answer": "no",
+      "ground_truth_answer": "no",
+      "exact_match": 1,
+      "ndcg@10": 0.6934264036172708,
+      "retrieved_docs": [
+        [
+          "doc-28622",
+          40.98714806348348
+        ],
+        [
+          "doc-94716",
+          40.98714806348348
+        ],
+        [
+          "doc-75867",
+          20.294954081106503
+        ],
+        [
+          "doc-144420",
+          20.294954081106503
+        ],
+        [
+          "doc-89202",
+          14.208438946344595
+        ],
+        [
+          "doc-56471",
+          13.405934377727608
+        ],
+        [
+          "doc-128870",
+          11.604433398044112
+        ],
+        [
+          "doc-861",
+          10.94310277407917
+        ],
+        [
+          "doc-101957",
+          10.94310277407917
+        ],
+        [
+          "doc-38291",
+          10.94310277407917
+        ],
+        [
+          "doc-127367",
+          10.800358726547785
+        ],
+        [
+          "doc-11767",
+          10.715818625646932
+        ],
+        [
+          "doc-1422",
+          10.50811610324566
+        ],
+        [
+          "doc-46630",
+          10.370704790562348
+        ],
+        [
+          "doc-76116",
+          10.10757521588362
+        ]
+      ]
+    },
+    {
+      "id": "5a7f5b6a5542994857a766fb",
+      "question": "What network did a musical game show that was the second game show to be produced and broadcast on the network, was produced by the CEO of Worldwide Biggies?",
+      "predicted_answer": "MTV",
+      "ground_truth_answer": "MTV",
+      "exact_match": 1,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-107904",
+          44.967563604466946
+        ],
+        [
+          "doc-111642",
+          39.00304681853521
+        ],
+        [
+          "doc-4538",
+          38.446001582601006
+        ],
+        [
+          "doc-21372",
+          33.016250886370074
+        ],
+        [
+          "doc-73164",
+          30.82445707191582
+        ],
+        [
+          "doc-45491",
+          30.348651604737906
+        ],
+        [
+          "doc-26930",
+          30.295457180507846
+        ],
+        [
+          "doc-114960",
+          30.214284539024007
+        ],
+        [
+          "doc-105881",
+          29.891918635120337
+        ],
+        [
+          "doc-130507",
+          29.607777694526362
+        ],
+        [
+          "doc-46423",
+          29.50397327614497
+        ],
+        [
+          "doc-28032",
+          29.50397327614497
+        ],
+        [
+          "doc-111890",
+          28.773145490985776
+        ],
+        [
+          "doc-43352",
+          28.730183793144636
+        ],
+        [
+          "doc-67502",
+          28.722869560852423
+        ]
+      ]
+    },
+    {
+      "id": "5ae0400455429942ec259c5e",
+      "question": "Who write the novel on which The Chamber was based? ",
+      "predicted_answer": "Judith Guest",
+      "ground_truth_answer": "John Grisham",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-126989",
+          15.797134915490819
+        ],
+        [
+          "doc-131100",
+          14.803683526294808
+        ],
+        [
+          "doc-144390",
+          12.566426190046911
+        ],
+        [
+          "doc-113048",
+          12.440266630878586
+        ],
+        [
+          "doc-88967",
+          12.398734309395522
+        ],
+        [
+          "doc-21286",
+          12.398734309395522
+        ],
+        [
+          "doc-15466",
+          12.313921552861817
+        ],
+        [
+          "doc-85950",
+          12.313921552861817
+        ],
+        [
+          "doc-70362",
+          12.264455549483188
+        ],
+        [
+          "doc-106",
+          12.087172224071598
+        ],
+        [
+          "doc-101554",
+          12.087172224071598
+        ],
+        [
+          "doc-74946",
+          12.06436366803214
+        ],
+        [
+          "doc-82124",
+          12.013810789821546
+        ],
+        [
+          "doc-132086",
+          11.957317546663544
+        ],
+        [
+          "doc-38085",
+          11.93437842609407
+        ]
+      ]
+    },
+    {
+      "id": "5addde7d5542992200553b7e",
+      "question": "What is one song from Almost Alice that was based on a Hookah-Smoking being from Lewis Carrolls book Alice's Adventures in Wonderland?",
+      "predicted_answer": "Alice in Verse: The Lost Rhymes of Wonderland",
+      "ground_truth_answer": "Caterpillar",
+      "exact_match": 0,
+      "ndcg@10": 0.21840743681816419,
+      "retrieved_docs": [
+        [
+          "doc-73681",
+          31.413624239917517
+        ],
+        [
+          "doc-61318",
+          30.12088008814095
+        ],
+        [
+          "doc-44768",
+          29.233309796362562
+        ],
+        [
+          "doc-45928",
+          27.56015169654778
+        ],
+        [
+          "doc-6965",
+          27.56015169654778
+        ],
+        [
+          "doc-46963",
+          27.290391402853437
+        ],
+        [
+          "doc-42019",
+          27.290391402853437
+        ],
+        [
+          "doc-81062",
+          27.290391402853437
+        ],
+        [
+          "doc-83224",
+          25.817173600458545
+        ],
+        [
+          "doc-67708",
+          24.623598993000115
+        ],
+        [
+          "doc-64891",
+          24.623598993000115
+        ],
+        [
+          "doc-114628",
+          24.623598993000115
+        ],
+        [
+          "doc-72901",
+          24.048690043998292
+        ],
+        [
+          "doc-109368",
+          22.69676784688319
+        ],
+        [
+          "doc-58310",
+          22.284258942466597
+        ]
+      ]
+    },
+    {
+      "id": "5ab1c44b554299706120955e",
+      "question": "The Magic of Disney Animation was a show at Disney's Hollywood Studios until it closed down in July 2015 and replaced with which interactive walkthrough attraction?",
+      "predicted_answer": "Star Wars Launch Bay",
+      "ground_truth_answer": "\"Star Wars\" Launch Bay",
+      "exact_match": 1,
+      "ndcg@10": 0.6934264036172708,
+      "retrieved_docs": [
+        [
+          "doc-94036",
+          44.6884222905966
+        ],
+        [
+          "doc-49165",
+          44.6884222905966
+        ],
+        [
+          "doc-105716",
+          40.252142022053135
+        ],
+        [
+          "doc-82063",
+          40.252142022053135
+        ],
+        [
+          "doc-92847",
+          38.71998610749858
+        ],
+        [
+          "doc-52817",
+          37.345191863388436
+        ],
+        [
+          "doc-58326",
+          37.345191863388436
+        ],
+        [
+          "doc-125788",
+          29.68977282193037
+        ],
+        [
+          "doc-8372",
+          29.647938671269277
+        ],
+        [
+          "doc-30238",
+          28.490302872437255
+        ],
+        [
+          "doc-93560",
+          28.490302872437255
+        ],
+        [
+          "doc-54580",
+          27.43229806415669
+        ],
+        [
+          "doc-95158",
+          27.227220438322522
+        ],
+        [
+          "doc-17565",
+          27.227220438322522
+        ],
+        [
+          "doc-32195",
+          27.227220438322522
+        ]
+      ]
+    },
+    {
+      "id": "5ac15d035542994d76dccde8",
+      "question": "What was the name of the group in which one half of the duo Toheart debuted, the other being Woohyun from Infinite?",
+      "predicted_answer": "the Grizzly River Boys",
+      "ground_truth_answer": "Shinee",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-42350",
+          43.998939198938146
+        ],
+        [
+          "doc-69004",
+          19.945095755254414
+        ],
+        [
+          "doc-1009",
+          18.446653534492942
+        ],
+        [
+          "doc-8044",
+          18.446653534492942
+        ],
+        [
+          "doc-105571",
+          18.446653534492942
+        ],
+        [
+          "doc-24450",
+          17.106814237719732
+        ],
+        [
+          "doc-35967",
+          17.106814237719732
+        ],
+        [
+          "doc-1632",
+          16.517766298800943
+        ],
+        [
+          "doc-8370",
+          15.74475203304458
+        ],
+        [
+          "doc-110827",
+          15.437245608100644
+        ],
+        [
+          "doc-74701",
+          15.437245608100644
+        ],
+        [
+          "doc-112876",
+          15.419120819270589
+        ],
+        [
+          "doc-66471",
+          15.419120819270589
+        ],
+        [
+          "doc-21626",
+          15.222398140727735
+        ],
+        [
+          "doc-85745",
+          15.137401675780627
+        ]
+      ]
+    },
+    {
+      "id": "5ab724a75542992aa3b8c7ae",
+      "question": "The Abilene Reflector-Chronicle is the daily newspaper for a city located in what county?",
+      "predicted_answer": ". The Silver City Daily Press and Independent is a six-day daily newspaper that serves the Silver City, New Mexico area of the United States. Founded in 1896 as the weekly \"Silver City Independent\", the paper was purchased by the Ely family in 1934. In 1935, Colonel Clyde Ely renamed the paper the \"Silver City Daily Press and Independent\" and converted it into a daily newspaper. In 2007, the newspaper received the Mark Twain Award from the New Mexico Associated Press Managing Editors for their outstanding member cooperation in 2006. Since the 2008 recession, the newspaper has outsourced its printing, increased its online presence, discontinued its membership in the Associated AP and joined an 11-member New Mexico newspaper exchange. The name, archives and website of the Daily Press were purchased by the Silver City Independent Publishing Company, LLC, in April, 2014, marking its first non-Ely family ownership since its conversion to a daily newspaper.",
+      "ground_truth_answer": "Dickinson County",
+      "exact_match": 0,
+      "ndcg@10": 0.5640920940185894,
+      "retrieved_docs": [
+        [
+          "doc-39580",
+          36.911155163547356
+        ],
+        [
+          "doc-22494",
+          36.1071247229291
+        ],
+        [
+          "doc-1192",
+          23.6933790483729
+        ],
+        [
+          "doc-127321",
+          23.6933790483729
+        ],
+        [
+          "doc-15894",
+          23.6933790483729
+        ],
+        [
+          "doc-3106",
+          23.6933790483729
+        ],
+        [
+          "doc-18731",
+          23.16445082675326
+        ],
+        [
+          "doc-62091",
+          23.16445082675326
+        ],
+        [
+          "doc-14852",
+          23.16445082675326
+        ],
+        [
+          "doc-20242",
+          21.87762548165205
+        ],
+        [
+          "doc-50117",
+          21.79112021820756
+        ],
+        [
+          "doc-11923",
+          21.037796822536173
+        ],
+        [
+          "doc-135004",
+          20.891152408964174
+        ],
+        [
+          "doc-19908",
+          20.7569087540886
+        ],
+        [
+          "doc-138063",
+          20.586295753230814
+        ]
+      ]
+    },
+    {
+      "id": "5a7337d55542994cef4bc4d1",
+      "question": "Which actress starred alongside Arnold Schwarzenegger and is known for her first big break on \"General Hospital?\"",
+      "predicted_answer": "Katherine Eunice Schwarzenegger",
+      "ground_truth_answer": "Tia Carrere",
+      "exact_match": 0,
+      "ndcg@10": 0.0,
+      "retrieved_docs": [
+        [
+          "doc-141978",
+          38.24578281655692
+        ],
+        [
+          "doc-51986",
+          24.83246933801648
+        ],
+        [
+          "doc-54758",
+          23.800964731331845
+        ],
+        [
+          "doc-140782",
+          23.800964731331845
+        ],
+        [
+          "doc-118575",
+          21.77592532367467
+        ],
+        [
+          "doc-8214",
+          20.412565316403544
+        ],
+        [
+          "doc-122266",
+          19.776583763718357
+        ],
+        [
+          "doc-103870",
+          19.25921433284375
+        ],
+        [
+          "doc-109520",
+          19.25921433284375
+        ],
+        [
+          "doc-118431",
+          19.134323121593063
+        ],
+        [
+          "doc-122480",
+          19.134323121593063
+        ],
+        [
+          "doc-21797",
+          18.131529578639352
+        ],
+        [
+          "doc-48423",
+          18.131529578639352
+        ],
+        [
+          "doc-98238",
+          17.832821901752112
+        ],
+        [
+          "doc-68350",
+          17.559361066223723
+        ]
+      ]
+    },
+    {
+      "id": "5ab3587755429969a97a813b",
+      "question": "What is the week long programming block on the Discovery Chanel featuring docufiction Zombie Shark?",
+      "predicted_answer": "Zombie Shark",
+      "ground_truth_answer": "Shark Week",
+      "exact_match": 0,
+      "ndcg@10": 1.0,
+      "retrieved_docs": [
+        [
+          "doc-3663",
+          28.28518242734569
+        ],
+        [
+          "doc-13930",
+          27.683445295736107
+        ],
+        [
+          "doc-116675",
+          22.582828972768105
+        ],
+        [
+          "doc-103725",
+          19.918530970602795
+        ],
+        [
+          "doc-102228",
+          19.110619384277907
+        ],
+        [
+          "doc-93072",
+          18.05066256560408
+        ],
+        [
+          "doc-33841",
+          17.70308715596503
+        ],
+        [
+          "doc-38762",
+          17.58411069978013
+        ],
+        [
+          "doc-2700",
+          16.74179963652751
+        ],
+        [
+          "doc-12012",
+          16.579207495677224
+        ],
+        [
+          "doc-115006",
+          16.35579795314205
+        ],
+        [
+          "doc-60321",
+          15.43912301261501
+        ],
+        [
+          "doc-132823",
+          15.43912301261501
+        ],
+        [
+          "doc-75570",
+          15.420079919541864
+        ],
+        [
+          "doc-100559",
+          15.041462212504072
+        ]
+      ]
+    },
+    {
+      "id": "5adc63b85542996e68525348",
+      "question": "Have both Diana Gabaldon and Karen Joy Fowler written science fiction and fantasy novels? ",
+      "predicted_answer": "yes",
+      "ground_truth_answer": "yes",
+      "exact_match": 1,
+      "ndcg@10": 0.3065735963827292,
+      "retrieved_docs": [
+        [
+          "doc-71954",
+          40.20527789948059
+        ],
+        [
+          "doc-96797",
+          40.20527789948059
+        ],
+        [
+          "doc-136725",
+          40.20527789948059
+        ],
+        [
+          "doc-46611",
+          34.69390580044116
+        ],
+        [
+          "doc-134835",
+          33.21049834272092
+        ],
+        [
+          "doc-96735",
+          33.21049834272092
+        ],
+        [
+          "doc-125068",
+          33.21049834272092
+        ],
+        [
+          "doc-95343",
+          32.225712481743045
+        ],
+        [
+          "doc-3858",
+          30.702219969236253
+        ],
+        [
+          "doc-60655",
+          30.702219969236253
+        ],
+        [
+          "doc-137455",
+          30.702219969236253
+        ],
+        [
+          "doc-141384",
+          30.688619952139156
+        ],
+        [
+          "doc-128563",
+          30.688619952139156
+        ],
+        [
+          "doc-127223",
+          28.813229308140755
+        ],
+        [
+          "doc-9625",
+          28.813229308140755
+        ]
+      ]
+    },
+    {
+      "id": "5a772ef5554299373536020c",
+      "question": "Who was born first Vladimir Voevodsky or Anatoly Maltsev ",
+      "predicted_answer": "Vladimir Voevodsky",
+      "ground_truth_answer": "Anatoly Ivanovich Maltsev",
+      "exact_match": 0,
+      "ndcg@10": 0.7903864795495061,
+      "retrieved_docs": [
+        [
+          "doc-70614",
+          30.42934552781067
+        ],
+        [
+          "doc-104708",
+          27.34952002691918
+        ],
+        [
+          "doc-55752",
+          25.014717419354653
+        ],
+        [
+          "doc-58875",
+          25.014717419354653
+        ],
+        [
+          "doc-126003",
+          24.61832737506512
+        ],
+        [
+          "doc-27712",
+          24.61832737506512
+        ],
+        [
+          "doc-103001",
+          22.246424409947117
+        ],
+        [
+          "doc-120438",
+          21.336050876826008
+        ],
+        [
+          "doc-125123",
+          20.99022273205224
+        ],
+        [
+          "doc-132828",
+          20.99022273205224
+        ],
+        [
+          "doc-102350",
+          19.873024365520592
+        ],
+        [
+          "doc-75710",
+          19.405323510611836
+        ],
+        [
+          "doc-47226",
+          17.85789706467671
+        ],
+        [
+          "doc-100523",
+          17.217216725456545
+        ],
+        [
+          "doc-21181",
+          15.894020112089741
+        ]
+      ]
+    },
+    {
+      "id": "5abb94b2554299642a094aac",
+      "question": "Linda Jackson established a boutique in which Victorian-style shopping arcade?",
+      "predicted_answer": "The Strand Arcade",
+      "ground_truth_answer": "The Strand Arcade",
+      "exact_match": 1,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-65487",
+          29.274488268815944
+        ],
+        [
+          "doc-129640",
+          15.843486733521305
+        ],
+        [
+          "doc-15239",
+          14.584743865378474
+        ],
+        [
+          "doc-14996",
+          13.117134768192411
+        ],
+        [
+          "doc-35085",
+          12.609811643556409
+        ],
+        [
+          "doc-83336",
+          12.590978984923854
+        ],
+        [
+          "doc-35780",
+          12.452821239327362
+        ],
+        [
+          "doc-62185",
+          12.147818405454633
+        ],
+        [
+          "doc-80900",
+          12.147818405454633
+        ],
+        [
+          "doc-22284",
+          12.088952595765829
+        ],
+        [
+          "doc-43645",
+          11.957843735241495
+        ],
+        [
+          "doc-25513",
+          11.841269805393395
+        ],
+        [
+          "doc-103073",
+          11.841269805393395
+        ],
+        [
+          "doc-96204",
+          11.840187138294727
+        ],
+        [
+          "doc-84657",
+          11.838594244621964
+        ]
+      ]
+    },
+    {
+      "id": "5ae7369d5542991e8301cbe2",
+      "question": "The Siege of Brahan saw Highlanders laying siege to a castle 3.5 mi southwest of what city?",
+      "predicted_answer": "Banff",
+      "ground_truth_answer": "Dingwall",
+      "exact_match": 0,
+      "ndcg@10": 1.0,
+      "retrieved_docs": [
+        [
+          "doc-46107",
+          54.36583288263451
+        ],
+        [
+          "doc-114442",
+          37.52835883809701
+        ],
+        [
+          "doc-141878",
+          35.56608098242542
+        ],
+        [
+          "doc-67582",
+          31.28293839072726
+        ],
+        [
+          "doc-19037",
+          28.255670576732058
+        ],
+        [
+          "doc-56997",
+          28.240299252715797
+        ],
+        [
+          "doc-45487",
+          28.103540419847462
+        ],
+        [
+          "doc-115326",
+          28.103540419847462
+        ],
+        [
+          "doc-52039",
+          27.233939237567142
+        ],
+        [
+          "doc-93757",
+          26.920844182452125
+        ],
+        [
+          "doc-12723",
+          25.47600323688317
+        ],
+        [
+          "doc-41319",
+          25.47600323688317
+        ],
+        [
+          "doc-18334",
+          25.30780252116905
+        ],
+        [
+          "doc-18666",
+          25.136262617615102
+        ],
+        [
+          "doc-123883",
+          24.988322309135107
+        ]
+      ]
+    },
+    {
+      "id": "5abb0c3e5542996cc5e49f7f",
+      "question": "What is the birthdate of this English television, radio, and stage actress, who starred in Barrymore Plus Four?",
+      "predicted_answer": "August 6, 1911",
+      "ground_truth_answer": "19 April 1950",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-134027",
+          28.963763481323898
+        ],
+        [
+          "doc-85353",
+          28.963763481323898
+        ],
+        [
+          "doc-52122",
+          19.857423067444728
+        ],
+        [
+          "doc-41557",
+          19.857423067444728
+        ],
+        [
+          "doc-43436",
+          19.659933289938884
+        ],
+        [
+          "doc-92483",
+          19.659933289938884
+        ],
+        [
+          "doc-141349",
+          18.391985636788554
+        ],
+        [
+          "doc-33426",
+          18.005777372050012
+        ],
+        [
+          "doc-93102",
+          17.58190379536584
+        ],
+        [
+          "doc-141176",
+          17.06074221102496
+        ],
+        [
+          "doc-128689",
+          17.06074221102496
+        ],
+        [
+          "doc-37268",
+          16.60670386696147
+        ],
+        [
+          "doc-105475",
+          15.463915900764723
+        ],
+        [
+          "doc-113394",
+          15.219244293230112
+        ],
+        [
+          "doc-21611",
+          14.560645388160316
+        ]
+      ]
+    },
+    {
+      "id": "5abbaa475542992ccd8e7f6b",
+      "question": "Which plant grows in East Asia, Aquilegia or Semiarundinaria?",
+      "predicted_answer": "Semiarundinaria",
+      "ground_truth_answer": "Semiarundinaria",
+      "exact_match": 1,
+      "ndcg@10": 0.0,
+      "retrieved_docs": [
+        [
+          "doc-74273",
+          26.012663700755475
+        ],
+        [
+          "doc-138786",
+          25.712110885827148
+        ],
+        [
+          "doc-40503",
+          25.132415158065612
+        ],
+        [
+          "doc-128462",
+          24.57952614534983
+        ],
+        [
+          "doc-61701",
+          22.829603913398593
+        ],
+        [
+          "doc-99740",
+          22.600551935477974
+        ],
+        [
+          "doc-115577",
+          20.920592756699506
+        ],
+        [
+          "doc-48647",
+          19.315360605215837
+        ],
+        [
+          "doc-106995",
+          19.143119608912478
+        ],
+        [
+          "doc-142072",
+          19.143119608912478
+        ],
+        [
+          "doc-115374",
+          17.908760533032442
+        ],
+        [
+          "doc-35971",
+          17.908760533032442
+        ],
+        [
+          "doc-129417",
+          16.920096734120218
+        ],
+        [
+          "doc-69886",
+          16.920096734120218
+        ],
+        [
+          "doc-108316",
+          16.775387361897078
+        ]
+      ]
+    },
+    {
+      "id": "5a8d187c5542994ba4e3dbf0",
+      "question": "What is the political party of the congressman Earl Krugel plotted to blow up the office of?",
+      "predicted_answer": "Who was born first, Clement Attlee or Thomas J. Morgan?",
+      "ground_truth_answer": "Republican",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-135511",
+          36.25491716203171
+        ],
+        [
+          "doc-57208",
+          24.23790601027026
+        ],
+        [
+          "doc-101796",
+          23.997563523359865
+        ],
+        [
+          "doc-136020",
+          20.68692851563142
+        ],
+        [
+          "doc-81720",
+          18.200259636623365
+        ],
+        [
+          "doc-41279",
+          17.070665804238917
+        ],
+        [
+          "doc-120663",
+          16.33602318821771
+        ],
+        [
+          "doc-87721",
+          16.100174209657013
+        ],
+        [
+          "doc-26128",
+          15.995044142068064
+        ],
+        [
+          "doc-18016",
+          15.995044142068064
+        ],
+        [
+          "doc-72251",
+          15.995044142068064
+        ],
+        [
+          "doc-122818",
+          15.896029287414814
+        ],
+        [
+          "doc-111576",
+          15.896029287414814
+        ],
+        [
+          "doc-72485",
+          15.87798790223517
+        ],
+        [
+          "doc-111479",
+          15.836760927981377
+        ]
+      ]
+    },
+    {
+      "id": "5a76d07a55429972597f13d9",
+      "question": "Which opened first The Mills at Jersey Gardens or Woodbury Common Premium Outlets?",
+      "predicted_answer": "The Mills at Jersey Gardens",
+      "ground_truth_answer": "Woodbury Common Premium Outlets",
+      "exact_match": 0,
+      "ndcg@10": 0.6509209298071326,
+      "retrieved_docs": [
+        [
+          "doc-36037",
+          45.39800137217064
+        ],
+        [
+          "doc-32218",
+          45.39800137217064
+        ],
+        [
+          "doc-2422",
+          33.9417277466971
+        ],
+        [
+          "doc-30399",
+          33.9417277466971
+        ],
+        [
+          "doc-18512",
+          21.803230918901455
+        ],
+        [
+          "doc-22680",
+          20.201203555914425
+        ],
+        [
+          "doc-66247",
+          19.110915642863784
+        ],
+        [
+          "doc-17298",
+          19.110915642863784
+        ],
+        [
+          "doc-142544",
+          18.773278393843658
+        ],
+        [
+          "doc-122897",
+          18.025306518211718
+        ],
+        [
+          "doc-14042",
+          17.705958143555332
+        ],
+        [
+          "doc-86553",
+          16.12373352957797
+        ],
+        [
+          "doc-135252",
+          15.997974462318336
+        ],
+        [
+          "doc-85663",
+          15.189506962635761
+        ],
+        [
+          "doc-23783",
+          14.56502008340864
+        ]
+      ]
+    },
+    {
+      "id": "5ae1499c55429901ffe4ae3f",
+      "question": "When was the indirect tax at which Navin Kumar served as the first chairman introduced in India? ",
+      "predicted_answer": "Indirect tax",
+      "ground_truth_answer": "1 July 2017",
+      "exact_match": 0,
+      "ndcg@10": 1.0,
+      "retrieved_docs": [
+        [
+          "doc-55432",
+          37.84680933378932
+        ],
+        [
+          "doc-70524",
+          27.714315304318372
+        ],
+        [
+          "doc-33967",
+          27.638564903392215
+        ],
+        [
+          "doc-106647",
+          26.648947343073914
+        ],
+        [
+          "doc-39449",
+          21.829665000883253
+        ],
+        [
+          "doc-1688",
+          21.428574436439582
+        ],
+        [
+          "doc-16638",
+          19.925033605752546
+        ],
+        [
+          "doc-45935",
+          18.2942255788057
+        ],
+        [
+          "doc-119623",
+          16.813794390032033
+        ],
+        [
+          "doc-71775",
+          16.68346758339092
+        ],
+        [
+          "doc-47677",
+          16.662284884025926
+        ],
+        [
+          "doc-98912",
+          15.905918069750903
+        ],
+        [
+          "doc-134375",
+          15.835202626901161
+        ],
+        [
+          "doc-524",
+          14.988976476463643
+        ],
+        [
+          "doc-88621",
+          14.708512854769491
+        ]
+      ]
+    },
+    {
+      "id": "5ab92253554299753720f724",
+      "question": "The album Ultraviolet featured a Canadian DJ, turntables, record producer, and music label executive, as its what?",
+      "predicted_answer": "Harmony in Ultraviolet",
+      "ground_truth_answer": "executive producer",
+      "exact_match": 0,
+      "ndcg@10": 0.0,
+      "retrieved_docs": [
+        [
+          "doc-104724",
+          25.959453275164304
+        ],
+        [
+          "doc-27990",
+          23.244308722091272
+        ],
+        [
+          "doc-81895",
+          21.211571762247054
+        ],
+        [
+          "doc-125266",
+          19.533085529090563
+        ],
+        [
+          "doc-13391",
+          18.838703396184066
+        ],
+        [
+          "doc-71948",
+          18.838703396184066
+        ],
+        [
+          "doc-106411",
+          18.838703396184066
+        ],
+        [
+          "doc-34965",
+          18.628926976309497
+        ],
+        [
+          "doc-60044",
+          18.21690005390251
+        ],
+        [
+          "doc-117671",
+          18.21690005390251
+        ],
+        [
+          "doc-12049",
+          18.128888557763062
+        ],
+        [
+          "doc-13954",
+          18.082269694667346
+        ],
+        [
+          "doc-55553",
+          18.072899876307716
+        ],
+        [
+          "doc-51584",
+          18.05464559558829
+        ],
+        [
+          "doc-129970",
+          18.034499624259897
+        ]
+      ]
+    },
+    {
+      "id": "5addd7e75542997dc790704e",
+      "question": "Who choreographed the step, also used in the Grapevine dance, that is a dance set to the song 'Electric Boogie\"?",
+      "predicted_answer": "and Ranbir Kapoor. The song is based on the theme of love between two lovers separated by time and distance. The song is a fusion of Western and Indian styles. The song is a duet between Ranbir Kapoor and Shreya Ghoshal. The song is a tribute to the legendary singer Pandit Birju Maharaj. The song is a tribute to the legendary singer Pandit Birju Maharaj. The song is a tribute to the legendary singer Pandit Birju Maharaj. The song is a tribute to the legendary singer Pandit Birju Maharaj. The song is a tribute to the legendary singer Pandit Birju Maharaj. The song is a tribute to the legendary singer Pandit Birju Maharaj. The song is a tribute to the legendary singer Pandit Birju Maharaj. The song is a tribute to the legendary singer Pandit Birju Maharaj. The song is a tribute to the legendary singer Pandit Birju Maharaj. The song is a tribute to the legendary singer Pandit Birju Maharaj. The song is a tribute to the legendary singer Pandit Birju Maharaj. The song is a tribute to the legendary singer Pandit Birju Maharaj. The song is a tribute to the legendary singer Pandit Bir",
+      "ground_truth_answer": "Richard L. \"Ric\" Silver",
+      "exact_match": 0,
+      "ndcg@10": 0.38685280723454163,
+      "retrieved_docs": [
+        [
+          "doc-112558",
+          23.676351524545325
+        ],
+        [
+          "doc-71502",
+          22.478821566943587
+        ],
+        [
+          "doc-11755",
+          20.380369752794046
+        ],
+        [
+          "doc-33968",
+          19.246790757798664
+        ],
+        [
+          "doc-32645",
+          19.246790757798664
+        ],
+        [
+          "doc-77147",
+          19.05474644649962
+        ],
+        [
+          "doc-135774",
+          17.567980684740828
+        ],
+        [
+          "doc-17169",
+          17.547184191234237
+        ],
+        [
+          "doc-28343",
+          17.28575651033115
+        ],
+        [
+          "doc-31678",
+          17.134536661599125
+        ],
+        [
+          "doc-96912",
+          16.980500572203024
+        ],
+        [
+          "doc-133433",
+          16.659560952218012
+        ],
+        [
+          "doc-68370",
+          16.60465733913842
+        ],
+        [
+          "doc-133883",
+          16.580932651039042
+        ],
+        [
+          "doc-116700",
+          16.571964935783605
+        ]
+      ]
+    },
+    {
+      "id": "5abeb7285542993fe9a41d18",
+      "question": "Nitya Mehra is a director who worked on the Ang Lee film that was based on the 2001 novel by whom?",
+      "predicted_answer": "Charles Frazier",
+      "ground_truth_answer": "Yann Martel",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-90705",
+          49.49777644481961
+        ],
+        [
+          "doc-45049",
+          29.73106983238514
+        ],
+        [
+          "doc-40234",
+          26.395320010090884
+        ],
+        [
+          "doc-15374",
+          26.395320010090884
+        ],
+        [
+          "doc-38178",
+          26.395320010090884
+        ],
+        [
+          "doc-55096",
+          24.415804925874202
+        ],
+        [
+          "doc-114345",
+          22.96606404183048
+        ],
+        [
+          "doc-50097",
+          21.151277788911862
+        ],
+        [
+          "doc-103924",
+          21.151277788911862
+        ],
+        [
+          "doc-52575",
+          21.089385428285247
+        ],
+        [
+          "doc-111053",
+          20.692856931789617
+        ],
+        [
+          "doc-4023",
+          19.897789409731537
+        ],
+        [
+          "doc-12704",
+          19.249467094103903
+        ],
+        [
+          "doc-88046",
+          18.66992734640105
+        ],
+        [
+          "doc-54018",
+          18.564474243064396
+        ]
+      ]
+    },
+    {
+      "id": "5abebde55542993fe9a41d42",
+      "question": "Mustafa Kemal University was named after the Turkish army officer, revolutionary, and founder of the Republic of Turkey who served as its first President beginning when?",
+      "predicted_answer": "1923",
+      "ground_truth_answer": "1923",
+      "exact_match": 1,
+      "ndcg@10": 0.5012658353418871,
+      "retrieved_docs": [
+        [
+          "doc-93650",
+          59.91224769532031
+        ],
+        [
+          "doc-1508",
+          58.14788541836682
+        ],
+        [
+          "doc-21637",
+          58.14788541836682
+        ],
+        [
+          "doc-128232",
+          58.14788541836682
+        ],
+        [
+          "doc-127801",
+          57.02202761860938
+        ],
+        [
+          "doc-53809",
+          56.972912698805004
+        ],
+        [
+          "doc-22458",
+          56.972912698805004
+        ],
+        [
+          "doc-27707",
+          53.47946262552179
+        ],
+        [
+          "doc-77107",
+          52.40397782638802
+        ],
+        [
+          "doc-99241",
+          50.892230584023714
+        ],
+        [
+          "doc-130653",
+          48.442968121331816
+        ],
+        [
+          "doc-3477",
+          40.38125492636244
+        ],
+        [
+          "doc-115539",
+          39.6209197966913
+        ],
+        [
+          "doc-100649",
+          36.21494822053039
+        ],
+        [
+          "doc-104595",
+          35.11682488885485
+        ]
+      ]
+    },
+    {
+      "id": "5adf884a554299025d62a2a9",
+      "question": "Name the Russian ice dancer who currently represents Spain and is partnered with Sara Hurtado from Spain and whose former partner was Ksenia Monko?",
+      "predicted_answer": "Kirill Khaliavin",
+      "ground_truth_answer": "Kirill Khaliavin",
+      "exact_match": 1,
+      "ndcg@10": 1.0,
+      "retrieved_docs": [
+        [
+          "doc-89972",
+          62.56652851255091
+        ],
+        [
+          "doc-75627",
+          58.538609468446495
+        ],
+        [
+          "doc-131345",
+          55.08820691763342
+        ],
+        [
+          "doc-77557",
+          38.54986833611541
+        ],
+        [
+          "doc-131731",
+          35.328676351064516
+        ],
+        [
+          "doc-5437",
+          27.789846333981266
+        ],
+        [
+          "doc-23383",
+          25.943391247242737
+        ],
+        [
+          "doc-77760",
+          25.25664010781683
+        ],
+        [
+          "doc-138215",
+          24.99878385987409
+        ],
+        [
+          "doc-53250",
+          24.831981627124726
+        ],
+        [
+          "doc-116173",
+          24.24558176339676
+        ],
+        [
+          "doc-25770",
+          24.09251717192239
+        ],
+        [
+          "doc-101006",
+          23.555964193198477
+        ],
+        [
+          "doc-2741",
+          23.41759649097706
+        ],
+        [
+          "doc-48031",
+          23.14143787928398
+        ]
+      ]
+    },
+    {
+      "id": "5a7de6815542991319bc9403",
+      "question": "What ski racer won more consecutive World Cup Championships and also won a 1976 Winter Olympic gold medal?",
+      "predicted_answer": "estyle World Ski Championships in Madonna di Campiglio.",
+      "ground_truth_answer": "Franz Klammer",
+      "exact_match": 0,
+      "ndcg@10": 0.23719771276929622,
+      "retrieved_docs": [
+        [
+          "doc-47051",
+          48.87676061467519
+        ],
+        [
+          "doc-143816",
+          48.87383730690253
+        ],
+        [
+          "doc-39089",
+          47.79130434813068
+        ],
+        [
+          "doc-7227",
+          45.1729409457404
+        ],
+        [
+          "doc-142054",
+          44.3540279059521
+        ],
+        [
+          "doc-121851",
+          44.08756017143077
+        ],
+        [
+          "doc-137580",
+          44.08756017143077
+        ],
+        [
+          "doc-93360",
+          42.885839861572805
+        ],
+        [
+          "doc-122293",
+          42.36482763751067
+        ],
+        [
+          "doc-16198",
+          42.36482763751067
+        ],
+        [
+          "doc-143164",
+          40.05588031009498
+        ],
+        [
+          "doc-93612",
+          37.86476017860212
+        ],
+        [
+          "doc-130262",
+          37.86476017860212
+        ],
+        [
+          "doc-13882",
+          37.1903598255695
+        ],
+        [
+          "doc-84022",
+          36.14347022112803
+        ]
+      ]
+    },
+    {
+      "id": "5ab704f55542991d32223756",
+      "question": "Which has more genus in a family, Stachyurus or Ericaceae?",
+      "predicted_answer": "Stachyurus",
+      "ground_truth_answer": "Ericaceae",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-108539",
+          21.582642497172795
+        ],
+        [
+          "doc-131890",
+          9.780587557894142
+        ],
+        [
+          "doc-58362",
+          9.751759815801284
+        ],
+        [
+          "doc-112090",
+          9.72712896486147
+        ],
+        [
+          "doc-71218",
+          9.72712896486147
+        ],
+        [
+          "doc-113514",
+          9.468368608627353
+        ],
+        [
+          "doc-121196",
+          9.468368608627353
+        ],
+        [
+          "doc-50219",
+          9.418259840045803
+        ],
+        [
+          "doc-73277",
+          9.418259840045803
+        ],
+        [
+          "doc-127597",
+          9.418259840045803
+        ],
+        [
+          "doc-15255",
+          9.418259840045803
+        ],
+        [
+          "doc-125005",
+          9.418259840045803
+        ],
+        [
+          "doc-91087",
+          9.368678653469074
+        ],
+        [
+          "doc-5994",
+          9.34718270415187
+        ],
+        [
+          "doc-107030",
+          9.34718270415187
+        ]
+      ]
+    },
+    {
+      "id": "5ae524f85542993aec5ec15c",
+      "question": "Which song was played for the end credits of the 2015 film \"Pitch Perfect 2?",
+      "predicted_answer": "\"Flashlight\"",
+      "ground_truth_answer": "Heartbreak Dream",
+      "exact_match": 0,
+      "ndcg@10": 0.8315546295836225,
+      "retrieved_docs": [
+        [
+          "doc-142729",
+          28.733023442397997
+        ],
+        [
+          "doc-85721",
+          20.498417566300677
+        ],
+        [
+          "doc-61772",
+          18.71392440865865
+        ],
+        [
+          "doc-116287",
+          17.639744398552057
+        ],
+        [
+          "doc-16058",
+          17.319185416634618
+        ],
+        [
+          "doc-129682",
+          17.00633853033238
+        ],
+        [
+          "doc-140242",
+          17.00633853033238
+        ],
+        [
+          "doc-55049",
+          16.963613070229673
+        ],
+        [
+          "doc-27085",
+          16.4102566244786
+        ],
+        [
+          "doc-119508",
+          15.36034903420304
+        ],
+        [
+          "doc-62029",
+          15.183113536740489
+        ],
+        [
+          "doc-137599",
+          15.130996043487384
+        ],
+        [
+          "doc-103760",
+          14.976860864810291
+        ],
+        [
+          "doc-18502",
+          14.788885847408503
+        ],
+        [
+          "doc-99958",
+          14.788885847408503
+        ]
+      ]
+    },
+    {
+      "id": "5ae23bcd5542992decbdcc98",
+      "question": "n which country was citizen Kartam Joga a political activist and Maoist, imprisoned for participating in an ambush in which 75 members of the Central Armed Forces, originally known as the Crown Representative's Police, were killed?",
+      "predicted_answer": "Albanian Kingdom",
+      "ground_truth_answer": "India",
+      "exact_match": 0,
+      "ndcg@10": 0.8315546295836225,
+      "retrieved_docs": [
+        [
+          "doc-98959",
+          80.17360841502683
+        ],
+        [
+          "doc-8366",
+          21.641400878574764
+        ],
+        [
+          "doc-52334",
+          21.00595094555931
+        ],
+        [
+          "doc-140486",
+          18.766309631216735
+        ],
+        [
+          "doc-132149",
+          17.95341750774945
+        ],
+        [
+          "doc-108094",
+          17.95341750774945
+        ],
+        [
+          "doc-69690",
+          17.9047501164268
+        ],
+        [
+          "doc-64453",
+          16.838192106260987
+        ],
+        [
+          "doc-16617",
+          16.610889886670968
+        ],
+        [
+          "doc-97954",
+          16.468945629539167
+        ],
+        [
+          "doc-73578",
+          16.24945041069497
+        ],
+        [
+          "doc-140692",
+          16.14162884377205
+        ],
+        [
+          "doc-111607",
+          16.11904573712221
+        ],
+        [
+          "doc-44091",
+          16.09926100386921
+        ],
+        [
+          "doc-63411",
+          16.07378791893553
+        ]
+      ]
+    },
+    {
+      "id": "5a7df2ea5542990b8f503b04",
+      "question": "Who was born first out of Béla Bartók and Igor Stravinsky?",
+      "predicted_answer": "Béla Bartók",
+      "ground_truth_answer": "Béla Viktor János Bartók",
+      "exact_match": 0,
+      "ndcg@10": 0.17723928678404774,
+      "retrieved_docs": [
+        [
+          "doc-113533",
+          33.319949029551545
+        ],
+        [
+          "doc-143903",
+          32.22431409300451
+        ],
+        [
+          "doc-45236",
+          32.22431409300451
+        ],
+        [
+          "doc-47687",
+          27.665202303030966
+        ],
+        [
+          "doc-90101",
+          27.665202303030966
+        ],
+        [
+          "doc-59768",
+          25.6795338630015
+        ],
+        [
+          "doc-93958",
+          25.6795338630015
+        ],
+        [
+          "doc-56192",
+          24.085794522811018
+        ],
+        [
+          "doc-2367",
+          22.798556865337083
+        ],
+        [
+          "doc-126860",
+          22.798556865337083
+        ],
+        [
+          "doc-63658",
+          22.798556865337083
+        ],
+        [
+          "doc-87423",
+          21.76057213563409
+        ],
+        [
+          "doc-63689",
+          19.3614817135134
+        ],
+        [
+          "doc-21543",
+          19.3614817135134
+        ],
+        [
+          "doc-50141",
+          19.34612795565109
+        ]
+      ]
+    },
+    {
+      "id": "5a82117f554299676cceb202",
+      "question": "Church of St. George of Samatya and Gülhane Park, are located in which mutual city?",
+      "predicted_answer": "answer: Michigan",
+      "ground_truth_answer": "Istanbul",
+      "exact_match": 0,
+      "ndcg@10": 0.9197207891481876,
+      "retrieved_docs": [
+        [
+          "doc-85264",
+          32.62590522469797
+        ],
+        [
+          "doc-85420",
+          19.10444444831993
+        ],
+        [
+          "doc-102024",
+          19.10444444831993
+        ],
+        [
+          "doc-135677",
+          19.10444444831993
+        ],
+        [
+          "doc-55155",
+          16.851776217785893
+        ],
+        [
+          "doc-125570",
+          16.393774816980844
+        ],
+        [
+          "doc-93052",
+          15.837261910965417
+        ],
+        [
+          "doc-41048",
+          14.397755572888919
+        ],
+        [
+          "doc-95299",
+          14.251933772624263
+        ],
+        [
+          "doc-34860",
+          14.249078315165532
+        ],
+        [
+          "doc-98470",
+          14.108782111958455
+        ],
+        [
+          "doc-68875",
+          13.85639810223651
+        ],
+        [
+          "doc-63846",
+          13.823495082299322
+        ],
+        [
+          "doc-20599",
+          13.634264469384284
+        ],
+        [
+          "doc-3869",
+          13.439876681742087
+        ]
+      ]
+    },
+    {
+      "id": "5a7b81f5554299042af8f773",
+      "question": "The lecture \"There's Plenty of Room at the Bottom\" was done by a physicist that died in what year?",
+      "predicted_answer": "2003",
+      "ground_truth_answer": "1988",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-32563",
+          35.14367906636664
+        ],
+        [
+          "doc-23278",
+          31.922077394609854
+        ],
+        [
+          "doc-84179",
+          24.37957174676498
+        ],
+        [
+          "doc-108748",
+          24.37957174676498
+        ],
+        [
+          "doc-7149",
+          22.19970986222864
+        ],
+        [
+          "doc-34603",
+          20.624670593146263
+        ],
+        [
+          "doc-82444",
+          18.417004375066576
+        ],
+        [
+          "doc-45067",
+          17.86010568529031
+        ],
+        [
+          "doc-104983",
+          16.693779925739612
+        ],
+        [
+          "doc-38977",
+          15.379963937826963
+        ],
+        [
+          "doc-96845",
+          15.022455950172972
+        ],
+        [
+          "doc-139710",
+          14.868626831962834
+        ],
+        [
+          "doc-120483",
+          13.844180964401971
+        ],
+        [
+          "doc-12376",
+          13.424691367236345
+        ],
+        [
+          "doc-59559",
+          12.329790298063111
+        ]
+      ]
+    },
+    {
+      "id": "5ab96b1d55429970cfb8eacf",
+      "question": "Which writer wrote more essays, David James Duncan or Edwidge Danticat?",
+      "predicted_answer": "Edwidge Danticat",
+      "ground_truth_answer": "David James Duncan",
+      "exact_match": 0,
+      "ndcg@10": 0.9197207891481876,
+      "retrieved_docs": [
+        [
+          "doc-88732",
+          23.342935896483574
+        ],
+        [
+          "doc-92099",
+          18.677453577682446
+        ],
+        [
+          "doc-67135",
+          18.631623570656444
+        ],
+        [
+          "doc-31026",
+          18.20003303616011
+        ],
+        [
+          "doc-18754",
+          17.698311205485098
+        ],
+        [
+          "doc-118150",
+          16.944894660048888
+        ],
+        [
+          "doc-94720",
+          16.32969708836269
+        ],
+        [
+          "doc-99075",
+          16.32969708836269
+        ],
+        [
+          "doc-88026",
+          16.32969708836269
+        ],
+        [
+          "doc-42087",
+          16.272322055844434
+        ],
+        [
+          "doc-22862",
+          15.984462634042513
+        ],
+        [
+          "doc-75141",
+          15.600813347917011
+        ],
+        [
+          "doc-119815",
+          14.955732347607697
+        ],
+        [
+          "doc-105593",
+          14.955732347607697
+        ],
+        [
+          "doc-13311",
+          14.492323902672592
+        ]
+      ]
+    },
+    {
+      "id": "5a8e24745542990e94052a6e",
+      "question": " Ruud Janssen is a Dutch Fluxus and mail artist currently living in Breda in the Netherlands, also known informally as what?",
+      "predicted_answer": "Y-chromosomal Adam",
+      "ground_truth_answer": "Holland",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-43553",
+          94.46832833494523
+        ],
+        [
+          "doc-111964",
+          58.13036277750957
+        ],
+        [
+          "doc-142536",
+          33.47439410895878
+        ],
+        [
+          "doc-42685",
+          30.73844890585767
+        ],
+        [
+          "doc-33026",
+          29.640042469563554
+        ],
+        [
+          "doc-41983",
+          26.642184135980074
+        ],
+        [
+          "doc-59764",
+          20.922747253900244
+        ],
+        [
+          "doc-119192",
+          20.671313030904404
+        ],
+        [
+          "doc-59101",
+          20.649934439443115
+        ],
+        [
+          "doc-21265",
+          19.702925252749452
+        ],
+        [
+          "doc-5540",
+          18.821786157343976
+        ],
+        [
+          "doc-19339",
+          18.38738016300811
+        ],
+        [
+          "doc-22800",
+          18.163715757664548
+        ],
+        [
+          "doc-33922",
+          17.99543557596711
+        ],
+        [
+          "doc-26729",
+          17.899057837500084
+        ]
+      ]
+    },
+    {
+      "id": "5a8845e45542994846c1ce81",
+      "question": "In what area of Salford is the club Gary Alexander Neville co-owns located?",
+      "predicted_answer": "Salford Quays",
+      "ground_truth_answer": "the Kersal area",
+      "exact_match": 0,
+      "ndcg@10": 0.9197207891481876,
+      "retrieved_docs": [
+        [
+          "doc-58933",
+          37.009963204257964
+        ],
+        [
+          "doc-42304",
+          26.29643243672842
+        ],
+        [
+          "doc-102623",
+          26.29643243672842
+        ],
+        [
+          "doc-69538",
+          26.10735558723714
+        ],
+        [
+          "doc-81152",
+          24.550774135713283
+        ],
+        [
+          "doc-15034",
+          22.899192634614096
+        ],
+        [
+          "doc-28923",
+          21.635386948516214
+        ],
+        [
+          "doc-115212",
+          21.54901984717139
+        ],
+        [
+          "doc-106843",
+          18.608873025354836
+        ],
+        [
+          "doc-34975",
+          18.542878757272803
+        ],
+        [
+          "doc-53243",
+          18.030802177432236
+        ],
+        [
+          "doc-118074",
+          16.760647800125106
+        ],
+        [
+          "doc-18439",
+          15.366181148777567
+        ],
+        [
+          "doc-44920",
+          15.303510942607677
+        ],
+        [
+          "doc-44119",
+          14.715739449970414
+        ]
+      ]
+    },
+    {
+      "id": "5ab85bc655429934fafe6d82",
+      "question": "Are both Hebi and Qingyang located in eastern Gansu province?",
+      "predicted_answer": "yes",
+      "ground_truth_answer": "no",
+      "exact_match": 0,
+      "ndcg@10": 0.6052602440527057,
+      "retrieved_docs": [
+        [
+          "doc-43738",
+          39.08805430554198
+        ],
+        [
+          "doc-63064",
+          39.08805430554198
+        ],
+        [
+          "doc-81994",
+          35.44640256645309
+        ],
+        [
+          "doc-99243",
+          20.55917164116109
+        ],
+        [
+          "doc-84180",
+          19.983864516418286
+        ],
+        [
+          "doc-4558",
+          19.79427514771773
+        ],
+        [
+          "doc-13833",
+          18.07947803271594
+        ],
+        [
+          "doc-76155",
+          18.07947803271594
+        ],
+        [
+          "doc-12958",
+          16.230381911629728
+        ],
+        [
+          "doc-47376",
+          16.230381911629728
+        ],
+        [
+          "doc-61932",
+          15.280369555539114
+        ],
+        [
+          "doc-78847",
+          15.269293798522948
+        ],
+        [
+          "doc-79020",
+          15.206221189592842
+        ],
+        [
+          "doc-7892",
+          15.206221189592842
+        ],
+        [
+          "doc-68777",
+          15.095604396297436
+        ]
+      ]
+    },
+    {
+      "id": "5a74b03455429916b01641d5",
+      "question": "In the mid-1980s, which political consultant was closely linked to the future 50th Speaker of the United States House of Representatives?",
+      "predicted_answer": "Joseph Gaylord",
+      "ground_truth_answer": "Joseph Gaylord",
+      "exact_match": 1,
+      "ndcg@10": 0.6240505200038379,
+      "retrieved_docs": [
+        [
+          "doc-2911",
+          38.88084050355133
+        ],
+        [
+          "doc-81417",
+          38.88084050355133
+        ],
+        [
+          "doc-126405",
+          31.142180878788846
+        ],
+        [
+          "doc-117386",
+          31.142180878788846
+        ],
+        [
+          "doc-129135",
+          24.03973932460666
+        ],
+        [
+          "doc-136232",
+          24.03973932460666
+        ],
+        [
+          "doc-60373",
+          23.311876783246703
+        ],
+        [
+          "doc-109973",
+          22.60472458003934
+        ],
+        [
+          "doc-142289",
+          22.60472458003934
+        ],
+        [
+          "doc-108530",
+          22.463363339552725
+        ],
+        [
+          "doc-78446",
+          22.3326049729325
+        ],
+        [
+          "doc-83107",
+          22.3326049729325
+        ],
+        [
+          "doc-4867",
+          21.890468829059206
+        ],
+        [
+          "doc-19375",
+          21.6101075844514
+        ],
+        [
+          "doc-6497",
+          21.561389666169568
+        ]
+      ]
+    },
+    {
+      "id": "5ab8504e55429934fafe6d57",
+      "question": "What courthouse was built in 1913 in a town established in 1876?",
+      "predicted_answer": "The Old County Courthouse",
+      "ground_truth_answer": "Rosebud County Courthouse",
+      "exact_match": 0,
+      "ndcg@10": 0.0,
+      "retrieved_docs": [
+        [
+          "doc-27191",
+          23.478147605991445
+        ],
+        [
+          "doc-86699",
+          23.057750777266886
+        ],
+        [
+          "doc-45618",
+          19.421604072576855
+        ],
+        [
+          "doc-132582",
+          19.37157931942472
+        ],
+        [
+          "doc-72691",
+          18.273023949491908
+        ],
+        [
+          "doc-65891",
+          18.111304951959127
+        ],
+        [
+          "doc-99397",
+          18.06638735147797
+        ],
+        [
+          "doc-66255",
+          17.737263563133062
+        ],
+        [
+          "doc-40868",
+          17.730583283378976
+        ],
+        [
+          "doc-106763",
+          17.571932991935498
+        ],
+        [
+          "doc-100772",
+          17.354721038799198
+        ],
+        [
+          "doc-71554",
+          17.018804400620823
+        ],
+        [
+          "doc-77093",
+          16.684437817789636
+        ],
+        [
+          "doc-88973",
+          16.48032112905876
+        ],
+        [
+          "doc-48806",
+          15.97952673695957
+        ]
+      ]
+    },
+    {
+      "id": "5a74e04f5542996c70cfae26",
+      "question": "Which European Space Agency astronaut, Maurizio Cheli or Léopold Eyharts  is a Brigadier General in the French Air Force? ",
+      "predicted_answer": "Léopold Eyharts",
+      "ground_truth_answer": "Léopold Eyharts",
+      "exact_match": 1,
+      "ndcg@10": 0.6934264036172708,
+      "retrieved_docs": [
+        [
+          "doc-17127",
+          63.46653427309499
+        ],
+        [
+          "doc-103705",
+          63.46653427309499
+        ],
+        [
+          "doc-138179",
+          61.01020002554369
+        ],
+        [
+          "doc-100174",
+          35.93716422596437
+        ],
+        [
+          "doc-68892",
+          33.75783624667643
+        ],
+        [
+          "doc-52731",
+          33.75783624667643
+        ],
+        [
+          "doc-91993",
+          33.75783624667643
+        ],
+        [
+          "doc-87009",
+          33.75783624667643
+        ],
+        [
+          "doc-55396",
+          33.75783624667643
+        ],
+        [
+          "doc-93566",
+          33.72808339025543
+        ],
+        [
+          "doc-140941",
+          32.79026530106556
+        ],
+        [
+          "doc-68154",
+          26.737123764666404
+        ],
+        [
+          "doc-129707",
+          26.363578074637513
+        ],
+        [
+          "doc-47991",
+          25.18428889340658
+        ],
+        [
+          "doc-47201",
+          24.169986382254635
+        ]
+      ]
+    },
+    {
+      "id": "5abe875f5542993f32c2a154",
+      "question": "when was the gangstar which  Albert Krieger was his defense lawyer born ?",
+      "predicted_answer": "1906",
+      "ground_truth_answer": "October 27, 1940",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-3169",
+          30.54353824729237
+        ],
+        [
+          "doc-84363",
+          19.300597639170277
+        ],
+        [
+          "doc-2547",
+          18.58030783111152
+        ],
+        [
+          "doc-119208",
+          18.58030783111152
+        ],
+        [
+          "doc-102662",
+          18.58030783111152
+        ],
+        [
+          "doc-22957",
+          18.58030783111152
+        ],
+        [
+          "doc-76528",
+          18.189848880821952
+        ],
+        [
+          "doc-125030",
+          18.130561160598454
+        ],
+        [
+          "doc-136788",
+          18.08457689601205
+        ],
+        [
+          "doc-91050",
+          16.966014124171757
+        ],
+        [
+          "doc-143490",
+          16.309267300674854
+        ],
+        [
+          "doc-29160",
+          15.388785102670827
+        ],
+        [
+          "doc-10449",
+          14.690628760918177
+        ],
+        [
+          "doc-132834",
+          14.538383230094261
+        ],
+        [
+          "doc-89715",
+          14.50571038248934
+        ]
+      ]
+    },
+    {
+      "id": "5a78c820554299029c4b5e8f",
+      "question": "What Award did The acress who starred in a 2004 American live-action/animated comedy film based on the Nickelodeon television series \"SpongeBob SquarePants\" whohifted to adult roles with her performances in \"Girl with a Pearl Earring\"?  ",
+      "predicted_answer": "sin. Angel Locsin (born Angelica Locsin Colmenares; April 23, 1985) is a Filipina television and film actress, commercial model, film producer and fashion designer. She came to prominence for her television roles as Alwina in the 2004 fantasy-themed television series \"Mulawin\" and as the superheroine Darna in the TV adaptation of the Mars Ravelo comics. Locsin was a contract artist of GMA Network up to early 2007 until she transferred to its rival network, ABS-CBN. She then starred as Lyka in the television series \"Lobo\", which earned her an International Emmy Award nomination for best performance. She later on starred in blockbuster films \"In The Name Of Love\" and \"One More Try\" for which she garnered critical acclaim for both performances. The two films earned Locsin the Star Award for Movies for Movie Actress of the Year and the Box-Office Entertainment Award for Film Actress of the Year, winning both awards two consecutive years. In 2013, she won the FAMAS Award and the Film Academy of the Philippines Award for best actress for her performance in \"One More Try\".",
+      "ground_truth_answer": "BAFTA Award",
+      "exact_match": 0,
+      "ndcg@10": 0.9197207891481876,
+      "retrieved_docs": [
+        [
+          "doc-87505",
+          41.69672653907725
+        ],
+        [
+          "doc-24071",
+          32.172149183820345
+        ],
+        [
+          "doc-79148",
+          32.172149183820345
+        ],
+        [
+          "doc-132013",
+          32.172149183820345
+        ],
+        [
+          "doc-90437",
+          31.557653861336586
+        ],
+        [
+          "doc-107631",
+          31.557653861336586
+        ],
+        [
+          "doc-13179",
+          25.190860383313492
+        ],
+        [
+          "doc-24787",
+          25.190860383313492
+        ],
+        [
+          "doc-42049",
+          25.190860383313492
+        ],
+        [
+          "doc-86863",
+          24.985191081788706
+        ],
+        [
+          "doc-92929",
+          24.57784777252209
+        ],
+        [
+          "doc-74530",
+          24.38201902057919
+        ],
+        [
+          "doc-105542",
+          24.38201902057919
+        ],
+        [
+          "doc-27486",
+          24.311769748201698
+        ],
+        [
+          "doc-137960",
+          24.311769748201698
+        ]
+      ]
+    },
+    {
+      "id": "5a77526b5542993735360230",
+      "question": "Which mountain peak has the higher elevation, Gasherbrum I or K6?",
+      "predicted_answer": "Gasherbrum I",
+      "ground_truth_answer": "Gasherbrum I",
+      "exact_match": 1,
+      "ndcg@10": 0.23719771276929622,
+      "retrieved_docs": [
+        [
+          "doc-89595",
+          28.990722161703754
+        ],
+        [
+          "doc-49999",
+          28.990722161703754
+        ],
+        [
+          "doc-61491",
+          25.800052260733978
+        ],
+        [
+          "doc-131382",
+          25.800052260733978
+        ],
+        [
+          "doc-138974",
+          25.800052260733978
+        ],
+        [
+          "doc-16762",
+          25.800052260733978
+        ],
+        [
+          "doc-29421",
+          25.800052260733978
+        ],
+        [
+          "doc-94632",
+          25.195417081398784
+        ],
+        [
+          "doc-77148",
+          25.195417081398784
+        ],
+        [
+          "doc-76525",
+          25.195417081398784
+        ],
+        [
+          "doc-73221",
+          25.195417081398784
+        ],
+        [
+          "doc-90132",
+          25.195417081398784
+        ],
+        [
+          "doc-41650",
+          25.195417081398784
+        ],
+        [
+          "doc-95623",
+          25.195417081398784
+        ],
+        [
+          "doc-80523",
+          25.195417081398784
+        ]
+      ]
+    },
+    {
+      "id": "5a87181555429960ec39b738",
+      "question": "Which Sumerian city was very powerful and influential during the Early Dynastic period and once a coastal city?",
+      "predicted_answer": "Ur",
+      "ground_truth_answer": "Ur",
+      "exact_match": 1,
+      "ndcg@10": 0.8315546295836225,
+      "retrieved_docs": [
+        [
+          "doc-63940",
+          32.15689276387448
+        ],
+        [
+          "doc-122416",
+          29.580511853627513
+        ],
+        [
+          "doc-6876",
+          28.69597169473172
+        ],
+        [
+          "doc-135436",
+          28.69597169473172
+        ],
+        [
+          "doc-87574",
+          25.030988368995786
+        ],
+        [
+          "doc-106883",
+          24.2130272456821
+        ],
+        [
+          "doc-796",
+          23.658046961697927
+        ],
+        [
+          "doc-71083",
+          23.40209033296675
+        ],
+        [
+          "doc-108943",
+          23.36353800225917
+        ],
+        [
+          "doc-69536",
+          20.999104747549925
+        ],
+        [
+          "doc-110919",
+          17.423481024076857
+        ],
+        [
+          "doc-91043",
+          16.76618319897041
+        ],
+        [
+          "doc-61833",
+          16.640884160583408
+        ],
+        [
+          "doc-116070",
+          15.786738281332998
+        ],
+        [
+          "doc-56041",
+          15.752853104107057
+        ]
+      ]
+    },
+    {
+      "id": "5ab89c365542991b5579efc2",
+      "question": "What do the song \"What Would I Do If I Could Feel\" and Nipsey Russell have in common?",
+      "predicted_answer": "poet",
+      "ground_truth_answer": "The Wiz",
+      "exact_match": 0,
+      "ndcg@10": 1.0,
+      "retrieved_docs": [
+        [
+          "doc-10935",
+          27.353253799247376
+        ],
+        [
+          "doc-128304",
+          19.65475642342232
+        ],
+        [
+          "doc-54450",
+          17.76583138018981
+        ],
+        [
+          "doc-124354",
+          17.605599492049624
+        ],
+        [
+          "doc-12150",
+          17.605599492049624
+        ],
+        [
+          "doc-97874",
+          17.545060997043148
+        ],
+        [
+          "doc-36302",
+          17.512948104872375
+        ],
+        [
+          "doc-26862",
+          13.10597098400634
+        ],
+        [
+          "doc-34047",
+          13.10597098400634
+        ],
+        [
+          "doc-87878",
+          12.942742580116125
+        ],
+        [
+          "doc-74972",
+          12.861682812668464
+        ],
+        [
+          "doc-67814",
+          12.67423377922412
+        ],
+        [
+          "doc-46764",
+          12.375724041543862
+        ],
+        [
+          "doc-33565",
+          12.148628489015826
+        ],
+        [
+          "doc-78458",
+          12.008739637072576
+        ]
+      ]
+    },
+    {
+      "id": "5ae534415542993aec5ec175",
+      "question": "What seven time NBA champion was acquired by the Cleveland Cavaliers in the 1989 season?",
+      "predicted_answer": "and the rights to the Brooklyn Nets' first round pick in the 2018 NBA draft; the trade would later be expanded with the Cavaliers acquiring a 2020 second round pick from the Miami Heat eight days afterward due to concerns over the health of Thomas's hip. On September 28, during training camp, Dwyane Wade would sign a one-year deal with Cleveland. The Cavs will play the first regular season game of the year on October 17, 2017 against the Boston Celtics.",
+      "ground_truth_answer": "Steve Kerr",
+      "exact_match": 0,
+      "ndcg@10": 0.0,
+      "retrieved_docs": [
+        [
+          "doc-15541",
+          32.58160422909051
+        ],
+        [
+          "doc-16840",
+          27.53704076657569
+        ],
+        [
+          "doc-67431",
+          26.9676785451312
+        ],
+        [
+          "doc-75257",
+          26.9676785451312
+        ],
+        [
+          "doc-46664",
+          26.463892056919576
+        ],
+        [
+          "doc-41629",
+          26.401096052618577
+        ],
+        [
+          "doc-114197",
+          25.14592359808239
+        ],
+        [
+          "doc-2998",
+          25.14592359808239
+        ],
+        [
+          "doc-38337",
+          25.04904802367772
+        ],
+        [
+          "doc-2685",
+          25.037671182374687
+        ],
+        [
+          "doc-80054",
+          25.037671182374687
+        ],
+        [
+          "doc-55191",
+          25.037671182374687
+        ],
+        [
+          "doc-68854",
+          25.014807440139677
+        ],
+        [
+          "doc-17514",
+          24.881043463670242
+        ],
+        [
+          "doc-12885",
+          24.53934124005987
+        ]
+      ]
+    },
+    {
+      "id": "5ab7ca2555429928e1fe38f0",
+      "question": "Are Reuben Nakian and Garo Yepremian of the same nationality?",
+      "predicted_answer": "yes",
+      "ground_truth_answer": "yes",
+      "exact_match": 1,
+      "ndcg@10": 0.9197207891481876,
+      "retrieved_docs": [
+        [
+          "doc-129418",
+          26.93185356477932
+        ],
+        [
+          "doc-110746",
+          24.711723508128216
+        ],
+        [
+          "doc-27344",
+          24.711723508128216
+        ],
+        [
+          "doc-48387",
+          24.711723508128216
+        ],
+        [
+          "doc-95639",
+          18.68230890624386
+        ],
+        [
+          "doc-104632",
+          17.350643331100468
+        ],
+        [
+          "doc-82641",
+          16.632732387406662
+        ],
+        [
+          "doc-111091",
+          15.415756027821885
+        ],
+        [
+          "doc-95065",
+          15.415756027821885
+        ],
+        [
+          "doc-19015",
+          15.224801574853874
+        ],
+        [
+          "doc-3138",
+          14.897591713748243
+        ],
+        [
+          "doc-126854",
+          14.897591713748243
+        ],
+        [
+          "doc-10235",
+          14.897591713748243
+        ],
+        [
+          "doc-779",
+          14.802927856032161
+        ],
+        [
+          "doc-138069",
+          14.520591839845578
+        ]
+      ]
+    },
+    {
+      "id": "5a890bef554299515336127a",
+      "question": "Which actor nicknamed Duke starred in The Barbarian and the Geisha?",
+      "predicted_answer": "Stéphane Rousseau",
+      "ground_truth_answer": "John Wayne",
+      "exact_match": 0,
+      "ndcg@10": 0.38685280723454163,
+      "retrieved_docs": [
+        [
+          "doc-72608",
+          20.331104615166666
+        ],
+        [
+          "doc-112110",
+          15.284080868330935
+        ],
+        [
+          "doc-10084",
+          15.060041357585938
+        ],
+        [
+          "doc-17020",
+          13.90185488898066
+        ],
+        [
+          "doc-34239",
+          13.90185488898066
+        ],
+        [
+          "doc-34534",
+          13.035765890765727
+        ],
+        [
+          "doc-90465",
+          12.871268833373023
+        ],
+        [
+          "doc-60590",
+          12.78082623221809
+        ],
+        [
+          "doc-96733",
+          12.725880295066457
+        ],
+        [
+          "doc-137577",
+          12.709180929048774
+        ],
+        [
+          "doc-62236",
+          12.709180929048774
+        ],
+        [
+          "doc-35737",
+          12.653497675698883
+        ],
+        [
+          "doc-54809",
+          12.530610093658586
+        ],
+        [
+          "doc-75086",
+          12.466913918332217
+        ],
+        [
+          "doc-141622",
+          12.169871595940432
+        ]
+      ]
+    },
+    {
+      "id": "5abbea8c554299114383a095",
+      "question": "Hello Mr. and Cracked and what type of media?",
+      "predicted_answer": "A1: magazine",
+      "ground_truth_answer": "magazine",
+      "exact_match": 0,
+      "ndcg@10": 0.6240505200038379,
+      "retrieved_docs": [
+        [
+          "doc-98499",
+          16.227724857585457
+        ],
+        [
+          "doc-141797",
+          16.227724857585457
+        ],
+        [
+          "doc-27181",
+          15.679480957048133
+        ],
+        [
+          "doc-49416",
+          15.204324777259187
+        ],
+        [
+          "doc-12731",
+          15.170681998494317
+        ],
+        [
+          "doc-122317",
+          15.073927038796429
+        ],
+        [
+          "doc-99148",
+          15.05901438746441
+        ],
+        [
+          "doc-81235",
+          14.6989417823925
+        ],
+        [
+          "doc-62297",
+          14.114735429959113
+        ],
+        [
+          "doc-129174",
+          14.00228832705234
+        ],
+        [
+          "doc-58500",
+          13.626477486002933
+        ],
+        [
+          "doc-79483",
+          13.394800533897191
+        ],
+        [
+          "doc-60051",
+          13.368682260181828
+        ],
+        [
+          "doc-35036",
+          13.028151028602458
+        ],
+        [
+          "doc-78116",
+          12.954303202763342
+        ]
+      ]
+    },
+    {
+      "id": "5ab351ce55429976abd1bc8d",
+      "question": "Kim Jae-joong, star of the series Triangle, is best know as a member of what pop group?",
+      "predicted_answer": "JYJ",
+      "ground_truth_answer": "JYJ",
+      "exact_match": 1,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-89246",
+          20.67005092104566
+        ],
+        [
+          "doc-93244",
+          19.444328407543452
+        ],
+        [
+          "doc-94939",
+          19.444328407543452
+        ],
+        [
+          "doc-682",
+          17.064676875537934
+        ],
+        [
+          "doc-33265",
+          16.782000283283516
+        ],
+        [
+          "doc-116565",
+          16.484046426926092
+        ],
+        [
+          "doc-124202",
+          15.806493679746751
+        ],
+        [
+          "doc-133122",
+          15.70954490435904
+        ],
+        [
+          "doc-80129",
+          15.70954490435904
+        ],
+        [
+          "doc-104894",
+          15.555847853956951
+        ],
+        [
+          "doc-56710",
+          15.555847853956951
+        ],
+        [
+          "doc-48172",
+          15.480334544218973
+        ],
+        [
+          "doc-122813",
+          15.466965996553002
+        ],
+        [
+          "doc-69679",
+          15.444929479800297
+        ],
+        [
+          "doc-121505",
+          15.403536989470759
+        ]
+      ]
+    },
+    {
+      "id": "5ae0180e55429942ec259c1a",
+      "question": "On what date did Atco Records release the album where Pantera introduced a groove metal sound?",
+      "predicted_answer": "also called groovecore) is a subgenre of alternative metal that incorporates elements of thrash metal, punk rock, funk, hip hop, reggae, jazz fusion, and other genres into a style characterized by fast tempos, driving rhythms, and prominent bass guitar lines. It originated in the early-to-mid 1990s as a subdivision of power metal; however, over time it began to develop into a distinct musical entity. Early groove metal bands drew heavily from the style of the mid-1980s band Anthrax, but subsequent acts such as Suicidal Tendencies, Underoath, and Converge incorporated more diverse influences. Many groove metal musicians cite Black Flag as having had the greatest influence on the genre.",
+      "ground_truth_answer": "July 24, 1990",
+      "exact_match": 0,
+      "ndcg@10": 0.23719771276929622,
+      "retrieved_docs": [
+        [
+          "doc-37242",
+          31.273257919361892
+        ],
+        [
+          "doc-61314",
+          31.273257919361892
+        ],
+        [
+          "doc-106341",
+          31.273257919361892
+        ],
+        [
+          "doc-136506",
+          31.273257919361892
+        ],
+        [
+          "doc-125282",
+          31.273257919361892
+        ],
+        [
+          "doc-8109",
+          31.273257919361892
+        ],
+        [
+          "doc-118325",
+          30.33403780523812
+        ],
+        [
+          "doc-74347",
+          24.93273380574944
+        ],
+        [
+          "doc-73682",
+          23.485727344564552
+        ],
+        [
+          "doc-20369",
+          23.40691816041533
+        ],
+        [
+          "doc-143475",
+          22.630392206687592
+        ],
+        [
+          "doc-17027",
+          22.626380073016396
+        ],
+        [
+          "doc-104608",
+          22.486453844608697
+        ],
+        [
+          "doc-77102",
+          22.446823451263665
+        ],
+        [
+          "doc-12364",
+          22.446823451263665
+        ]
+      ]
+    },
+    {
+      "id": "5add1f1d554299473435385d",
+      "question": "Which landslide killed 18 people in New South Wales, Australia, on 30 July 1997 with only Stuart Diver surviving?",
+      "predicted_answer": "1997 Thredbo landslide",
+      "ground_truth_answer": "1997 Thredbo landslide",
+      "exact_match": 1,
+      "ndcg@10": 0.9197207891481876,
+      "retrieved_docs": [
+        [
+          "doc-66289",
+          41.83489456137314
+        ],
+        [
+          "doc-141901",
+          41.83489456137314
+        ],
+        [
+          "doc-73360",
+          37.444053661376785
+        ],
+        [
+          "doc-74612",
+          37.444053661376785
+        ],
+        [
+          "doc-46395",
+          22.31524398050781
+        ],
+        [
+          "doc-12825",
+          20.01083627292557
+        ],
+        [
+          "doc-122373",
+          19.46170917220158
+        ],
+        [
+          "doc-68970",
+          18.412518806074253
+        ],
+        [
+          "doc-139785",
+          18.047560491833593
+        ],
+        [
+          "doc-1295",
+          17.113199912006017
+        ],
+        [
+          "doc-143933",
+          16.221432932665873
+        ],
+        [
+          "doc-989",
+          15.986751444124513
+        ],
+        [
+          "doc-84918",
+          15.901041410575901
+        ],
+        [
+          "doc-55156",
+          15.163989589799742
+        ],
+        [
+          "doc-137475",
+          15.122415716376887
+        ]
+      ]
+    },
+    {
+      "id": "5ae3f0a35542995dadf2426a",
+      "question": "Mastercard Foundation is based at an office complex owned and managed by who?",
+      "predicted_answer": "Columbia University",
+      "ground_truth_answer": "Cadillac Fairview",
+      "exact_match": 0,
+      "ndcg@10": 0.8772153153380493,
+      "retrieved_docs": [
+        [
+          "doc-43262",
+          26.87606400241094
+        ],
+        [
+          "doc-46943",
+          22.143758225113043
+        ],
+        [
+          "doc-33985",
+          21.54684990176566
+        ],
+        [
+          "doc-102801",
+          20.680234146063107
+        ],
+        [
+          "doc-79045",
+          20.196393111587412
+        ],
+        [
+          "doc-28171",
+          18.1494475263217
+        ],
+        [
+          "doc-63376",
+          17.181766509644582
+        ],
+        [
+          "doc-99375",
+          17.181766509644582
+        ],
+        [
+          "doc-77864",
+          17.181766509644582
+        ],
+        [
+          "doc-13720",
+          16.96868439395971
+        ],
+        [
+          "doc-74948",
+          16.96868439395971
+        ],
+        [
+          "doc-128479",
+          16.22970953002156
+        ],
+        [
+          "doc-32080",
+          15.157549134192209
+        ],
+        [
+          "doc-43200",
+          14.985077387394483
+        ],
+        [
+          "doc-49561",
+          14.836107078056342
+        ]
+      ]
+    },
+    {
+      "id": "5ae50b4555429960a22e0255",
+      "question": "Peter Chan was a geomancer of a philosophical system that translates to what in English?",
+      "predicted_answer": "\"Tragic\"",
+      "ground_truth_answer": "\"wind-water\"",
+      "exact_match": 0,
+      "ndcg@10": 1.0,
+      "retrieved_docs": [
+        [
+          "doc-112630",
+          28.98192432665317
+        ],
+        [
+          "doc-111698",
+          23.700409491670783
+        ],
+        [
+          "doc-141033",
+          20.676080635974373
+        ],
+        [
+          "doc-82018",
+          17.371956722984482
+        ],
+        [
+          "doc-117367",
+          16.093239612392427
+        ],
+        [
+          "doc-73132",
+          15.412188023212126
+        ],
+        [
+          "doc-79153",
+          15.018035986274885
+        ],
+        [
+          "doc-81774",
+          14.604583212423144
+        ],
+        [
+          "doc-7405",
+          14.46455062563653
+        ],
+        [
+          "doc-5675",
+          13.53101298251951
+        ],
+        [
+          "doc-6061",
+          13.33130016581625
+        ],
+        [
+          "doc-63073",
+          13.212045049574094
+        ],
+        [
+          "doc-18741",
+          13.151792021752458
+        ],
+        [
+          "doc-77530",
+          13.090020845973696
+        ],
+        [
+          "doc-142022",
+          13.090020845973696
+        ]
+      ]
+    },
+    {
+      "id": "5ab7d8385542993667794017",
+      "question": "\"Hasta la Raíz\" (English: \"To the Root\") is a song by Mexican recording artist Natalia Lafourcade, is a Mexican pop-rock singer and songwriter who since her debut in what year, has been one of the most successful singers, in the pop rock scene in Latin America?",
+      "predicted_answer": "Aparentemente\", released in 1991. Six years later, was performed by fellow Mexican singer Zayda Y Los Culpables and released by Musart Records as the second single from her self-titled album in 1997. Mexican-American singer Jenni Rivera recorded a cover version for her studio album \"Parrandera, Rebelde y Atrevida\".",
+      "ground_truth_answer": "2003",
+      "exact_match": 0,
+      "ndcg@10": 0.8772153153380493,
+      "retrieved_docs": [
+        [
+          "doc-139362",
+          76.0483999126285
+        ],
+        [
+          "doc-56685",
+          47.067864809511384
+        ],
+        [
+          "doc-31144",
+          43.11565765453616
+        ],
+        [
+          "doc-42345",
+          41.73534403198428
+        ],
+        [
+          "doc-38812",
+          38.12300188362273
+        ],
+        [
+          "doc-10897",
+          38.10282106683732
+        ],
+        [
+          "doc-82395",
+          37.58078471834928
+        ],
+        [
+          "doc-10974",
+          36.83895687933522
+        ],
+        [
+          "doc-100302",
+          36.536043963208876
+        ],
+        [
+          "doc-144103",
+          36.536043963208876
+        ],
+        [
+          "doc-134938",
+          35.66531887699153
+        ],
+        [
+          "doc-25774",
+          34.37468638324431
+        ],
+        [
+          "doc-122657",
+          33.94706255555287
+        ],
+        [
+          "doc-2190",
+          33.513128550479564
+        ],
+        [
+          "doc-126245",
+          33.49098483678894
+        ]
+      ]
+    },
+    {
+      "id": "5a7a4b595542990198eaf10d",
+      "question": "Where are the headquarters of the company that Blue Point Brewing Company is a subsidiary of?",
+      "predicted_answer": "Leuven, Belgium",
+      "ground_truth_answer": "Leuven, Belgium",
+      "exact_match": 1,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-89497",
+          41.27199739789612
+        ],
+        [
+          "doc-124114",
+          31.348128679962116
+        ],
+        [
+          "doc-69575",
+          31.348128679962116
+        ],
+        [
+          "doc-53103",
+          31.348128679962116
+        ],
+        [
+          "doc-78911",
+          31.348128679962116
+        ],
+        [
+          "doc-136018",
+          30.22764255703387
+        ],
+        [
+          "doc-49503",
+          28.999573910743674
+        ],
+        [
+          "doc-94724",
+          28.999573910743674
+        ],
+        [
+          "doc-8279",
+          28.999573910743674
+        ],
+        [
+          "doc-47117",
+          28.999573910743674
+        ],
+        [
+          "doc-14014",
+          28.999573910743674
+        ],
+        [
+          "doc-37838",
+          28.999573910743674
+        ],
+        [
+          "doc-63930",
+          27.130477281717127
+        ],
+        [
+          "doc-73090",
+          27.130477281717127
+        ],
+        [
+          "doc-51292",
+          27.130477281717127
+        ]
+      ]
+    },
+    {
+      "id": "5add2258554299473435386a",
+      "question": "John Elwood Schweitz, is a retired American basketball player in the National Basketball Association (NBA), he played in two NBA seasons, for which American professional basketball team based in Seattle, Washington? ",
+      "predicted_answer": "1961) is an American retired basketball player who played professionally for the Detroit Pistons in the National Basketball Association (NBA). A point guard, the 12-time NBA All-Star was named one of the 50 Greatest Players in NBA History and inducted into the Naismith Memorial Basketball Hall of Fame. Thomas has also been a professional and collegiate head coach, a basketball executive, and a broadcaster.",
+      "ground_truth_answer": "Seattle SuperSonics",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-90007",
+          65.21181218895961
+        ],
+        [
+          "doc-21344",
+          56.38768379704829
+        ],
+        [
+          "doc-27297",
+          56.38768379704829
+        ],
+        [
+          "doc-92264",
+          55.92655604436757
+        ],
+        [
+          "doc-107676",
+          55.61414203652252
+        ],
+        [
+          "doc-114749",
+          54.75842246871445
+        ],
+        [
+          "doc-15494",
+          54.75842246871445
+        ],
+        [
+          "doc-4902",
+          54.75842246871445
+        ],
+        [
+          "doc-19103",
+          54.55949618346547
+        ],
+        [
+          "doc-45790",
+          54.55949618346547
+        ],
+        [
+          "doc-120444",
+          54.17640160499635
+        ],
+        [
+          "doc-48911",
+          53.54919565437821
+        ],
+        [
+          "doc-2656",
+          53.54919565437821
+        ],
+        [
+          "doc-133457",
+          53.542091409140326
+        ],
+        [
+          "doc-35568",
+          53.542091409140326
+        ]
+      ]
+    },
+    {
+      "id": "5a77780d55429967ab1051aa",
+      "question": "Who is older, Micky Dolenz or Raul Malo?",
+      "predicted_answer": "Micky Dolenz",
+      "ground_truth_answer": "George Michael Dolenz, Jr.",
+      "exact_match": 0,
+      "ndcg@10": 0.0,
+      "retrieved_docs": [
+        [
+          "doc-61182",
+          26.9848240710663
+        ],
+        [
+          "doc-8978",
+          24.58113049523772
+        ],
+        [
+          "doc-94790",
+          23.60108777245563
+        ],
+        [
+          "doc-51987",
+          18.659330606537445
+        ],
+        [
+          "doc-68528",
+          18.090864451008137
+        ],
+        [
+          "doc-71364",
+          16.71110671516835
+        ],
+        [
+          "doc-142814",
+          16.575885666698472
+        ],
+        [
+          "doc-34083",
+          13.902315248137393
+        ],
+        [
+          "doc-21401",
+          13.902315248137393
+        ],
+        [
+          "doc-47525",
+          13.151161813717229
+        ],
+        [
+          "doc-4635",
+          13.151161813717229
+        ],
+        [
+          "doc-18231",
+          12.925984584195382
+        ],
+        [
+          "doc-73898",
+          10.783552489936193
+        ],
+        [
+          "doc-73507",
+          9.762285877337314
+        ],
+        [
+          "doc-96851",
+          9.648069673507722
+        ]
+      ]
+    },
+    {
+      "id": "5ae5e0795542993aec5ec1eb",
+      "question": "Which TV series introduced the star who was paired with Robert De Niro in the film Killing Season ?",
+      "predicted_answer": "Grudge Match",
+      "ground_truth_answer": "Welcome Back, Kotter",
+      "exact_match": 0,
+      "ndcg@10": 0.21840743681816419,
+      "retrieved_docs": [
+        [
+          "doc-47870",
+          36.229788373721114
+        ],
+        [
+          "doc-104492",
+          30.5459556007007
+        ],
+        [
+          "doc-18266",
+          26.606563431128677
+        ],
+        [
+          "doc-10404",
+          26.606563431128677
+        ],
+        [
+          "doc-8221",
+          26.606563431128677
+        ],
+        [
+          "doc-74952",
+          24.920325825333073
+        ],
+        [
+          "doc-123904",
+          24.394664410659043
+        ],
+        [
+          "doc-23632",
+          24.394664410659043
+        ],
+        [
+          "doc-83706",
+          23.867020468597843
+        ],
+        [
+          "doc-108505",
+          23.644253078389173
+        ],
+        [
+          "doc-120026",
+          23.03442600176935
+        ],
+        [
+          "doc-24422",
+          23.03442600176935
+        ],
+        [
+          "doc-82739",
+          22.989995814379387
+        ],
+        [
+          "doc-73380",
+          22.56018544250968
+        ],
+        [
+          "doc-134435",
+          22.56018544250968
+        ]
+      ]
+    },
+    {
+      "id": "5ade5412554299728e26c6cd",
+      "question": "In which U.S. city did Kyle Richardson begin his college football career?",
+      "predicted_answer": "the first since 1997. This was the first appearance by Toledo since 1990. Boston College had never previously appeared in the bowl game prior to this game. The game was televised nationally by ESPN.",
+      "ground_truth_answer": "Jonesboro, Arkansas",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-6376",
+          24.36183842412594
+        ],
+        [
+          "doc-89921",
+          18.054272060229593
+        ],
+        [
+          "doc-142812",
+          17.703587230040682
+        ],
+        [
+          "doc-17226",
+          15.784055284568446
+        ],
+        [
+          "doc-76448",
+          15.66181507904608
+        ],
+        [
+          "doc-103981",
+          15.561706751512144
+        ],
+        [
+          "doc-28204",
+          15.561706751512144
+        ],
+        [
+          "doc-138002",
+          15.472109341767094
+        ],
+        [
+          "doc-9834",
+          15.380692019437179
+        ],
+        [
+          "doc-8828",
+          14.943621510346825
+        ],
+        [
+          "doc-33939",
+          14.404167728831897
+        ],
+        [
+          "doc-57600",
+          14.0106270270685
+        ],
+        [
+          "doc-89981",
+          13.913082493441673
+        ],
+        [
+          "doc-68889",
+          13.87576985128675
+        ],
+        [
+          "doc-56968",
+          13.862770240432006
+        ]
+      ]
+    },
+    {
+      "id": "5a7e9d505542994959419a2f",
+      "question": "Where did the third collaboration open by Richard Rodgers  and Oscar Hammerstein II , The form began to flourish in the late 1960s?",
+      "predicted_answer": "ault. The story concerns a young woman forced into a life of servitude by her cruel stepmother, who dreams of a better life. With the help of her Fairy Godmother, Cinderella is transformed into an elegant young lady and is able to attend the ball to meet her Prince, but, in this version, she must open the Prince's eyes to the injustice in his kingdom.",
+      "ground_truth_answer": "Broadway",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-48686",
+          47.42268209723349
+        ],
+        [
+          "doc-121986",
+          37.759401786688954
+        ],
+        [
+          "doc-90423",
+          33.46275699418541
+        ],
+        [
+          "doc-52980",
+          33.318150581041806
+        ],
+        [
+          "doc-109747",
+          31.21804915813424
+        ],
+        [
+          "doc-61339",
+          29.77263150231087
+        ],
+        [
+          "doc-9815",
+          29.28036904967745
+        ],
+        [
+          "doc-113427",
+          28.741920997254724
+        ],
+        [
+          "doc-80535",
+          28.741920997254724
+        ],
+        [
+          "doc-14586",
+          28.655832041079528
+        ],
+        [
+          "doc-100937",
+          28.655832041079528
+        ],
+        [
+          "doc-24843",
+          28.466117214921333
+        ],
+        [
+          "doc-54380",
+          28.36335885606513
+        ],
+        [
+          "doc-63209",
+          26.939164650179954
+        ],
+        [
+          "doc-35806",
+          25.74988220588042
+        ]
+      ]
+    },
+    {
+      "id": "5aba6fb955429955dce3ee23",
+      "question": "WHat German-born French composer created the operetta La Grande-Duchesse de Gérolstein?",
+      "predicted_answer": "answer: Georges Bizet",
+      "ground_truth_answer": "Jacques Offenbach",
+      "exact_match": 0,
+      "ndcg@10": 0.0,
+      "retrieved_docs": [
+        [
+          "doc-48326",
+          31.309580003150828
+        ],
+        [
+          "doc-424",
+          23.607883768124868
+        ],
+        [
+          "doc-100175",
+          21.76226016808646
+        ],
+        [
+          "doc-35597",
+          21.10747823049745
+        ],
+        [
+          "doc-130154",
+          20.72381379464578
+        ],
+        [
+          "doc-86805",
+          20.383397654283087
+        ],
+        [
+          "doc-113866",
+          20.181816270189945
+        ],
+        [
+          "doc-5931",
+          20.150716028650898
+        ],
+        [
+          "doc-91285",
+          20.034792691158792
+        ],
+        [
+          "doc-31117",
+          19.60918415380874
+        ],
+        [
+          "doc-39141",
+          19.550131284362052
+        ],
+        [
+          "doc-122475",
+          19.241273176501004
+        ],
+        [
+          "doc-69347",
+          19.1931080743899
+        ],
+        [
+          "doc-102421",
+          18.594290789353256
+        ],
+        [
+          "doc-17907",
+          18.398340522908544
+        ]
+      ]
+    },
+    {
+      "id": "5ab2580d554299340b5254a2",
+      "question": "Texas v. White and United States v. Curtiss-Wright Export Corp. were argued in what court?",
+      "predicted_answer": "United States Supreme Court",
+      "ground_truth_answer": "The Supreme Court",
+      "exact_match": 0,
+      "ndcg@10": 0.8315546295836225,
+      "retrieved_docs": [
+        [
+          "doc-7440",
+          23.699115152459523
+        ],
+        [
+          "doc-63439",
+          20.65200814294661
+        ],
+        [
+          "doc-109432",
+          20.65200814294661
+        ],
+        [
+          "doc-58070",
+          20.65200814294661
+        ],
+        [
+          "doc-44950",
+          20.65200814294661
+        ],
+        [
+          "doc-124208",
+          18.790441093468637
+        ],
+        [
+          "doc-35645",
+          18.790441093468637
+        ],
+        [
+          "doc-65486",
+          18.790441093468637
+        ],
+        [
+          "doc-109539",
+          17.337472289699882
+        ],
+        [
+          "doc-107793",
+          16.62542083486091
+        ],
+        [
+          "doc-137907",
+          16.152580960886294
+        ],
+        [
+          "doc-133376",
+          16.140534152723255
+        ],
+        [
+          "doc-143106",
+          15.88964393439168
+        ],
+        [
+          "doc-19593",
+          15.482919863041214
+        ],
+        [
+          "doc-11002",
+          15.118711033055419
+        ]
+      ]
+    },
+    {
+      "id": "5ae156fc5542990adbacf75b",
+      "question": "In between Chionodoxa and Aerangis which is a genus of the Orchid family (Orchidaceae)?",
+      "predicted_answer": "Aerangis",
+      "ground_truth_answer": "Aerangis",
+      "exact_match": 1,
+      "ndcg@10": 0.3065735963827292,
+      "retrieved_docs": [
+        [
+          "doc-85604",
+          22.940384658943046
+        ],
+        [
+          "doc-7474",
+          22.940384658943046
+        ],
+        [
+          "doc-69501",
+          22.254492966797464
+        ],
+        [
+          "doc-59309",
+          20.72043956732167
+        ],
+        [
+          "doc-124822",
+          20.417080228133628
+        ],
+        [
+          "doc-48399",
+          20.417080228133628
+        ],
+        [
+          "doc-13451",
+          20.34437082459914
+        ],
+        [
+          "doc-124028",
+          19.96113273715869
+        ],
+        [
+          "doc-143726",
+          19.29372288633381
+        ],
+        [
+          "doc-32254",
+          19.028551036000096
+        ],
+        [
+          "doc-139237",
+          18.701848772057122
+        ],
+        [
+          "doc-127446",
+          18.28277396171279
+        ],
+        [
+          "doc-92192",
+          18.22734235554865
+        ],
+        [
+          "doc-102078",
+          18.21885300095534
+        ],
+        [
+          "doc-25665",
+          17.935075548370136
+        ]
+      ]
+    },
+    {
+      "id": "5adeba1a554299728e26c785",
+      "question": "Did Edmund Berkeley market both Geniac and Commodore International ?",
+      "predicted_answer": "yes",
+      "ground_truth_answer": "no",
+      "exact_match": 0,
+      "ndcg@10": 0.9197207891481876,
+      "retrieved_docs": [
+        [
+          "doc-26345",
+          31.350947366082345
+        ],
+        [
+          "doc-92559",
+          20.7708316160156
+        ],
+        [
+          "doc-63159",
+          20.7708316160156
+        ],
+        [
+          "doc-87839",
+          19.811487677934245
+        ],
+        [
+          "doc-45676",
+          19.360044516520333
+        ],
+        [
+          "doc-112777",
+          19.01056972590917
+        ],
+        [
+          "doc-90016",
+          18.30078203052128
+        ],
+        [
+          "doc-106966",
+          18.30078203052128
+        ],
+        [
+          "doc-68429",
+          16.025894365015045
+        ],
+        [
+          "doc-30027",
+          15.776438993693429
+        ],
+        [
+          "doc-44576",
+          15.555027882092611
+        ],
+        [
+          "doc-65866",
+          15.183093292683697
+        ],
+        [
+          "doc-84505",
+          14.670704016725454
+        ],
+        [
+          "doc-85869",
+          14.263451965597
+        ],
+        [
+          "doc-32878",
+          14.23204488431791
+        ]
+      ]
+    },
+    {
+      "id": "5ae41f7255429970de88d906",
+      "question": "The kinara is the candle holder used in Kwanzaa celebrations, in which country?",
+      "predicted_answer": "Austria",
+      "ground_truth_answer": "United States",
+      "exact_match": 0,
+      "ndcg@10": 0.8065735963827293,
+      "retrieved_docs": [
+        [
+          "doc-77789",
+          60.81244199450573
+        ],
+        [
+          "doc-54259",
+          28.211123799585764
+        ],
+        [
+          "doc-121540",
+          23.15274271141495
+        ],
+        [
+          "doc-53370",
+          22.077989978631294
+        ],
+        [
+          "doc-102383",
+          21.66284622971432
+        ],
+        [
+          "doc-104829",
+          19.53131947207071
+        ],
+        [
+          "doc-118401",
+          19.204158852774018
+        ],
+        [
+          "doc-51188",
+          17.096659588976543
+        ],
+        [
+          "doc-13795",
+          15.436199336148416
+        ],
+        [
+          "doc-144244",
+          12.448493423988813
+        ],
+        [
+          "doc-104897",
+          10.615684538425333
+        ],
+        [
+          "doc-118523",
+          10.571479483279582
+        ],
+        [
+          "doc-54301",
+          10.323184133257623
+        ],
+        [
+          "doc-97650",
+          10.31817605229785
+        ],
+        [
+          "doc-49713",
+          10.289252419876235
+        ]
+      ]
+    },
+    {
+      "id": "5a7cc380554299452d57ba2b",
+      "question": "The current First Lady of Finland is Jenni Haukio, wife of a finnish politician in office since what year?",
+      "predicted_answer": "2012",
+      "ground_truth_answer": "2012",
+      "exact_match": 1,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-93014",
+          48.49330318921372
+        ],
+        [
+          "doc-40586",
+          43.97870140674949
+        ],
+        [
+          "doc-46398",
+          34.5159812744756
+        ],
+        [
+          "doc-18842",
+          34.24988644966434
+        ],
+        [
+          "doc-55760",
+          33.86014505230231
+        ],
+        [
+          "doc-86481",
+          33.645304000452946
+        ],
+        [
+          "doc-5858",
+          31.96867088749798
+        ],
+        [
+          "doc-105086",
+          30.95092649008589
+        ],
+        [
+          "doc-6109",
+          26.842202824598488
+        ],
+        [
+          "doc-13968",
+          26.375976195853067
+        ],
+        [
+          "doc-112739",
+          26.34560225366292
+        ],
+        [
+          "doc-28273",
+          26.34560225366292
+        ],
+        [
+          "doc-96016",
+          26.141613953477616
+        ],
+        [
+          "doc-120257",
+          26.141613953477616
+        ],
+        [
+          "doc-24408",
+          25.974021429630643
+        ]
+      ]
+    },
+    {
+      "id": "5abcc62755429959677d6ad9",
+      "question": "Who edited the magazine which Subhash Sharma photographs are regularly published in ?",
+      "predicted_answer": "Harold Harris",
+      "ground_truth_answer": "Electrical and Electronics Engineers",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-66884",
+          41.70775746786381
+        ],
+        [
+          "doc-65280",
+          22.01570335427659
+        ],
+        [
+          "doc-97566",
+          20.843308993587673
+        ],
+        [
+          "doc-22549",
+          19.730100303667648
+        ],
+        [
+          "doc-16827",
+          19.47293974942233
+        ],
+        [
+          "doc-33623",
+          19.178007758016506
+        ],
+        [
+          "doc-137479",
+          19.03081243569231
+        ],
+        [
+          "doc-93235",
+          18.546990506467687
+        ],
+        [
+          "doc-82271",
+          18.503083017630775
+        ],
+        [
+          "doc-85398",
+          18.007689304174917
+        ],
+        [
+          "doc-14593",
+          18.00670090366725
+        ],
+        [
+          "doc-125630",
+          17.902794961754747
+        ],
+        [
+          "doc-41966",
+          17.902794961754747
+        ],
+        [
+          "doc-87649",
+          17.8675703062334
+        ],
+        [
+          "doc-5089",
+          17.673247034656356
+        ]
+      ]
+    },
+    {
+      "id": "5a888473554299206df2b2d6",
+      "question": "What conference does the team Deb Patterson was the head coach of until March 9, 2014 compete in?",
+      "predicted_answer": "Big East name. The women's volleyball team, which had been an associate member of the America East Conference before the Big East split, remained in that conference for one more season before joining the Big East for the 2014 season.",
+      "ground_truth_answer": "Big 12 Conference",
+      "exact_match": 0,
+      "ndcg@10": 0.6131471927654584,
+      "retrieved_docs": [
+        [
+          "doc-107123",
+          42.87807533049555
+        ],
+        [
+          "doc-34592",
+          28.29579882671881
+        ],
+        [
+          "doc-93030",
+          27.847205295816178
+        ],
+        [
+          "doc-76327",
+          27.55266990979584
+        ],
+        [
+          "doc-34176",
+          24.746211045212284
+        ],
+        [
+          "doc-123965",
+          24.311222113320106
+        ],
+        [
+          "doc-39672",
+          24.26445753903733
+        ],
+        [
+          "doc-115948",
+          23.92861901184528
+        ],
+        [
+          "doc-92771",
+          23.389733021149674
+        ],
+        [
+          "doc-45823",
+          23.389733021149674
+        ],
+        [
+          "doc-81338",
+          23.0687164880651
+        ],
+        [
+          "doc-90172",
+          23.0687164880651
+        ],
+        [
+          "doc-111481",
+          22.996068812633077
+        ],
+        [
+          "doc-115260",
+          22.78539253636267
+        ],
+        [
+          "doc-31670",
+          22.693112259301845
+        ]
+      ]
+    },
+    {
+      "id": "5a7e12745542995f4f4023d0",
+      "question": "Who was the producer of the film Catherine McCormack played in in 2007",
+      "predicted_answer": "Peter Hyams",
+      "ground_truth_answer": "Danny Boyle",
+      "exact_match": 0,
+      "ndcg@10": 0.38685280723454163,
+      "retrieved_docs": [
+        [
+          "doc-28089",
+          30.14650398256973
+        ],
+        [
+          "doc-85542",
+          24.805883818613864
+        ],
+        [
+          "doc-138004",
+          23.020429558457504
+        ],
+        [
+          "doc-19589",
+          18.391649376605294
+        ],
+        [
+          "doc-69680",
+          15.685291114359993
+        ],
+        [
+          "doc-106858",
+          15.264453170465742
+        ],
+        [
+          "doc-47422",
+          15.251101952677615
+        ],
+        [
+          "doc-43889",
+          15.245100331714532
+        ],
+        [
+          "doc-127919",
+          15.005084969404397
+        ],
+        [
+          "doc-92323",
+          14.818116346072596
+        ],
+        [
+          "doc-138568",
+          14.546836120491097
+        ],
+        [
+          "doc-8558",
+          14.457758709707939
+        ],
+        [
+          "doc-131933",
+          14.090589535118923
+        ],
+        [
+          "doc-118647",
+          14.057094113456898
+        ],
+        [
+          "doc-62469",
+          13.974771140547166
+        ]
+      ]
+    },
+    {
+      "id": "5adbf33355429944faac23ca",
+      "question": "Cordoba Fighting Dog and Labrador Husky, are a breed of what?",
+      "predicted_answer": "dog",
+      "ground_truth_answer": "dog",
+      "exact_match": 1,
+      "ndcg@10": 0.9197207891481876,
+      "retrieved_docs": [
+        [
+          "doc-99703",
+          46.17217495023271
+        ],
+        [
+          "doc-99786",
+          30.085242757109977
+        ],
+        [
+          "doc-68422",
+          30.085242757109977
+        ],
+        [
+          "doc-132807",
+          26.127270251658103
+        ],
+        [
+          "doc-82381",
+          26.127270251658103
+        ],
+        [
+          "doc-33720",
+          26.127270251658103
+        ],
+        [
+          "doc-110601",
+          25.26732859566645
+        ],
+        [
+          "doc-36486",
+          25.26732859566645
+        ],
+        [
+          "doc-51609",
+          25.26732859566645
+        ],
+        [
+          "doc-77904",
+          24.852327005382545
+        ],
+        [
+          "doc-11566",
+          24.217759148209865
+        ],
+        [
+          "doc-126877",
+          23.747472107924878
+        ],
+        [
+          "doc-112498",
+          22.68991218426109
+        ],
+        [
+          "doc-9203",
+          22.68991218426109
+        ],
+        [
+          "doc-84395",
+          22.68991218426109
+        ]
+      ]
+    }
+  ]
+}
