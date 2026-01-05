@@ -1,53 +1,8 @@
 # RAG System - Setup and Running Instructions
 
-## 1. Code Base Structure
-Project_updated/
-├── code/
-│ ├── web_ui.py # Web-based user interface (Flask)
-│ │
-│ ├── generators/ # Answer generation modules
-│ │ ├── init.py
-│ │ ├── basic_rag_langchain.py # Basic RAG with LangChain
-│ │ ├── fewshot_rag.py # Few-shot learning RAG
-│ │ ├── multiturn_langgraph.py # Multi-turn conversational RAG (Feature A)
-│ │ ├── agentic_langgraph.py # Agentic workflow RAG (Feature B)
-│ │ └── unified_rag_langchain.py # Unified interface for all modes
-│ │
-│ ├── retrievers/ # Document retrieval modules
-│ │ ├── init.py
-│ │ ├── bm25.py # BM25 sparse retrieval
-│ │ ├── dense.py # Dense retrieval (GTE-small)
-│ │ ├── e5_mistral.py # E5 Mistral retrieval (used in submission)
-│ │ ├── colbert.py # ColBERT retrieval
-│ │ └── word2vec.py # Word2Vec retrieval
-│ │
-│ ├── models/ # Fine-tuned models
-│ │ └── finetuned-qwen-1.5b/ # Fine-tuned Qwen 1.5B model
-│ │ ├── adapter_config.json
-│ │ ├── adapter_model.safetensors
-│ │ └── ... (model files)
-│ │
-│ ├── data/ # Data files
-│ │ ├── collection.jsonl # Document collection
-│ │ ├── train.jsonl # Training data
-│ │ ├── dev.jsonl # Development data
-│ │ ├── test.jsonl # Test queries
-│ │ ├── e5_embeddings.npz # Pre-computed E5 embeddings
-│ │ └── gte_embeddings.npz # Pre-computed GTE embeddings
-│ │
-│ ├── templates/ # HTML templates for web UI
-│ │ └── index.html # Main web interface
-│ │
-│ ├── generate_test_submission.py # Script to generate test_predict.jsonl
-│ ├── finetune_qwen.py # Model fine-tuning script
-│ └── requirements.txt # Python dependencies
-│
-└── .venv/ # Virtual environment (created during setup)
+## 1. Step-by-Step Instructions for Running the System
 
-
-## 2. Step-by-Step Instructions for Running the System
-
-### 2.1 Environment Setup
+### 1.1 Environment Setup
 
 #### Step 1: Create Virtual Environment
 cd code
@@ -63,7 +18,7 @@ pip install -r requirements.txt
 #### Step 4: Download NLTK Data
 python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk.download('wordnet')"
 
-### 2.2 Reproducing test_predict.jsonl
+### 1.2 Reproducing test_predict.jsonl
 To generate the test_predict.jsonl file:
 cd code
 python generate_test_submission.py
@@ -81,7 +36,7 @@ python generate_test_submission.py
 {"id": "query-id", "answer": "generated answer"}
 Expected runtime: ~10-15 minutes for full test set (depends on GPU)
 
-### 2.3 Running the Web Interface
+### 1.3 Running the Web Interface
 To explore the three RAG modes interactively:
 cd code
 python web_ui.py
@@ -94,11 +49,11 @@ Available modes:
 🔄 MultiTurn RAG: Conversation with memory & query reformulation (Feature A)
 🧠 Agentic Workflow: Multi-step reasoning with decomposition (Feature B)
 
-## 3. Environment Setup - Package Versions
-### 3.1 Python Version
+## 2. Environment Setup - Package Versions
+### 2.1 Python Version
 **Python 3.11.12** (Required)
 
-### 3.2 Core Dependencies
+### 2.2 Core Dependencies
 
 **Deep Learning & Transformers:**
 - `torch==2.5.1` (install separately with CUDA/CPU flag)
@@ -148,7 +103,7 @@ Available modes:
 - `PyYAML==6.0.2` - YAML parser
 - `packaging==24.2` - Package version utilities
 
-### 3.3 System Requirements
+### 2.3 System Requirements
 **Minimum Requirements:**
 - RAM: 16GB (32GB recommended)
 - Storage: ~10GB for models and data
@@ -159,7 +114,7 @@ Available modes:
 - CUDA: 12.1 or compatible
 - OS: Windows 10/11, Linux, or macOS
 
-### 3.4 Installation Notes
+### 2.4 Installation Notes
 **For GPU Support:**
 - Ensure CUDA toolkit is installed
 - Install PyTorch FIRST before other packages:
@@ -177,7 +132,7 @@ pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https
 pip install -r requirements.txt
 python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk.download('wordnet')"
 
-## 4. File Descriptions
+## 3. File Descriptions
 Key Files:
 generate_test_submission.py: Main script for reproducing test_predict.jsonl
 web_ui.py: Interactive web interface for exploring RAG modes
@@ -193,7 +148,7 @@ Few-shot: 10 examples from train.jsonl
 Top-k: 15 documents per query
 Temperature: 0.2
 
-## 5. Notes
+## 4. Notes
 The system uses a fine-tuned Qwen 1.5B model which has limitations for complex entity disambiguation
 MultiTurn RAG (Feature A) maintains conversation memory via Flask sessions
 Agentic Workflow (Feature B) implements query decomposition, retrieval, synthesis, verification, and reflection steps
